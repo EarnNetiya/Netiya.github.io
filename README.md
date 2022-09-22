@@ -1,1 +1,1 @@
-# Netiya.githup.io
+# Netiya.github.io
