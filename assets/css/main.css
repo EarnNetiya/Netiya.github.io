@@ -217,7 +217,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		
 		font-size: 4rem;
 		font-weight: 600;
 		letter-spacing: -0.05em;
@@ -3883,3 +3883,6 @@ input, select, textarea {
 		}
 
 	}
+
+	body{font-family: 'Bai Jamjuree', sans-serif;}
+	
