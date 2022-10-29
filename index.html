@@ -21,7 +21,80 @@
 	.indent{
 		text-indent: 50px;
 	}
+	body {
+	margin: 0;
+	font-size: 28px;
+  }
+  
+  .header {
+	background-color: #f1f1f1;
+	padding: 30px;
+	text-align: center;
+  }
+  
+  #navbar {
+	overflow: hidden;
+	background-color: #333;
+  }
+  
+  #navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+  }
+  
+  #navbar a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  #navbar a.active {
+	background-color: #4CAF50;
+	color: white;
+  }
+  
+  .content {
+	padding: 16px;
+  }
+  
+  .sticky {
+	position: fixed;
+	top: 0;
+	width: 100%
+  }
+  
+  .sticky + .content {
+	padding-top: 60px;
+  }
+  </style>
+  </head>
+  <body onscroll="myFunction()">
+  
+  
+  
+  <div id="navbar">
+	<a class="active" href="javascript:void(0)">Home</a>
+	<a href="javascript:void(0)">News</a>
+	<a href="javascript:void(0)">Contact</a>
+  </div>
+  <script>
+	const navbar = document.getElementById("navbar");
+	const sticky = navbar.offsetTop;
+	
+	function myFunction() {
+	  if (window.scrollY >= sticky) {
+	  navbar.classList.add("sticky")
+	  } else {
+	  navbar.classList.remove("sticky");
+	  }
+	}
+	</script>  
 </style>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!-- Intro -->
