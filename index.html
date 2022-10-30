@@ -21,80 +21,19 @@
 	.indent{
 		text-indent: 50px;
 	}
-	body {
-	margin: 0;
-	font-size: 28px;
-  }
-  
-  .header {
-	background-color: #f1f1f1;
-	padding: 30px;
-	text-align: center;
-  }
-  
-  #navbar {
-	overflow: hidden;
-	background-color: #333;
-  }
-  
-  #navbar a {
-	float: left;
-	display: block;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-  }
-  
-  #navbar a:hover {
-	background-color: #ddd;
-	color: black;
-  }
-  
-  #navbar a.active {
-	background-color: #4CAF50;
-	color: white;
-  }
-  
-  .content {
-	padding: 16px;
-  }
-  
-  .sticky {
-	position: fixed;
-	top: 0;
-	width: 100%
-  }
-  
-  .sticky + .content {
-	padding-top: 60px;
-  }
-  </style>
-  </head>
-  <body onscroll="myFunction()">
-  
-  
-  
-  <div id="navbar">
-	<a class="active" href="javascript:void(0)">Home</a>
-	<a href="javascript:void(0)">News</a>
-	<a href="javascript:void(0)">Contact</a>
-  </div>
-  <script>
-	const navbar = document.getElementById("navbar");
-	const sticky = navbar.offsetTop;
-	
-	function myFunction() {
-	  if (window.scrollY >= sticky) {
-	  navbar.classList.add("sticky")
-	  } else {
-	  navbar.classList.remove("sticky");
-	  }
+	.tab {
+		display: inline-block;
+	    margin-left: 40px;
 	}
-	</script>  
+	.text {
+	background-color: #1c437b;
+	color: white;
+	border: 5px solid #5d9cec;
+	border-radius: 20px;
+	margin: 20px;
+	padding: 20px;
+	}
 </style>
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 				<!-- Intro -->
@@ -138,6 +77,9 @@
 							<h2>Download</h2>
 						</header>
 						<div class="content">
+							
+							
+							
 							<p><strong>Visual Studio Code</strong> <a href="https://code.visualstudio.com/download">Click To Download</a></p>
 							<p><strong>Git Bash</strong> <a href="https://git-scm.com/downloads">Click To Download</a></p>
 							<p><strong>Python</strong> <a href="https://www.python.org/downloads/">Click To Download</a></p>
@@ -173,10 +115,13 @@
 						<p><strong>IF</strong><br>คำสั่ง if เป็นคำสั่งที่ใช้ควบคุมให้โปรแกรมตัดสินใจทำงานหรือไม่ทำงานในชุดคำสั่งที่กำหนดโดยตรวจสอบจากนิพจน์เงื่อนไขทางตรรกศาสตร์ที่กำหนดว่า เป็นจริงหรือเท็จ ถ้านิพจน์ที่กำหนดให้เป็นจริง
 							(true) โปรแกรมจะทำงานที่ชุดคำสั่งที่อยู่หลังคำสั่ง if แต่ถ้านิพจน์ที่กำหนดไว้เป็นเท็จ (false) โปรแกรมจะข้ามไปทำงานที่คำสั่งต่อไปทันที ซึ่งมีรูปแบบการทำงาน ดังนี้</p>
 						<p>
-							if boolean_experssion:
-							 <div class="indent" >statements</div></p>
-						<p>โดยที่ boolean_expression  เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ เงื่อนไขเป็นจริง (true) หรือเท็จ (false) เท่านั้น</p>
-						<p>statements	เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้เป็นจริง (true)</p>
+							<div class="text">
+								if boolean_experssion:
+								<br><span class="tab">statements</span>	
+							</div>
+						</p>
+						<p><strong>boolean_expression</strong>  เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ เงื่อนไขเป็นจริง (true) หรือเท็จ (false) เท่านั้น
+						<strong>statements</strong>	เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้เป็นจริง (true)</p>
 						<p>flowchart</p>
 						<p>Example</p>
 						<p>อธิบาย<br>
@@ -200,13 +145,16 @@
 							ที่กำหนดให้เป็นจริง (true) โปรแกรมจะทำงานที่ชุดคำสั่งในทางเลือกหลังคำสั่ง if แต่ถ้านิพจน์ที่
 							กำหนดไว้เป็นเท็จ (else) โปรแกรมจะทำงานที่ชุดคำสั่งในทางเลือกหลังคำสั่ง else ซึ่งมีรูปแบบ
 							การทำงานดังนี้</p>
-						<p> if boolean_experssion:<br>
-								statements<br>
-							else:<br>
-								statements</p>
-						<p>โดยที่ boolean_expression  เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ เงื่อนไขเป็นจริง (true) หรือเท็จ (false) เท่านั้น<br>
-								statements_1  เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้เป็นจริง (true)<br>
-								statements_2  เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้เป็นจริง (false)<br>
+						<p> 
+							<div class="text">
+							if boolean_experssion:				
+							<br><span class="tab">statements</span>													
+							<br>else:
+							<br><span class="tab">statements</p></span>
+							</div>
+						<p><strong> boolean_expression</strong>  เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ เงื่อนไขเป็นจริง (true) หรือเท็จ (false) เท่านั้น<br>
+							<strong>statements_1</strong>  เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้เป็นจริง (true)<br>
+							<strong>statements_2</strong>  เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้เป็นจริง (false)<br>
 						<p>flowchart</p>		
 						<p>Example</p>
 						<p>อธิบาย<br>
@@ -229,26 +177,26 @@
 							ทางเลือกไว้ด้วย โดยโปรแกรมจะตรวจสอบนิพจน์ของแต่ละทางเลือก หากพบว่าทางเลือกไหนมี
 							นิพจน์เป็นจริง (true) ก็จะทำงานที่ชุดคำสั่งภายในทางเลือกนั้น โดยไม่พิจารณาทางเลือกอื่นที่เหลือ
 							อีก ซึ่งมีรูปแบบการทำงานดังนี้</p>
-						<p> if boolean_expression 1:<br>
-								statement_1<br>
-							elif boolean expression 2:<br>
-								statement_2<br>
-							.<br>
-							.<br>
-							.<br>
-							else:<br>
-								statement_n</p>
-						<p>โดยที่ boolean_expression  เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ เงื่อนไขเป็นจริง (true) หรือเท็จ (false) เท่านั้น<br>
-							โดยที่ boolean_expression_ 1  เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ
-							เงื่อนไขเป็นจริง (true) หรือเท็จ (false) เท่านั้น<br>
-							boolean_expression _2 เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ<br>
+						<p> 
+							<div class="text">
+							if boolean_expression 1:
+							<br><span class="tab">statement_1</span>	
+							<br>elif boolean expression 2:
+							<br><span class="tab">statement_2</span>	
+							<br>.
+							<br>.
+							<br>.
+							<br>else:
+							<br><span class="tab">statement_n</p></span>	
+							</div>
+						<p><strong>boolean_expression_1</strong>	เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ เงื่อนไขเป็นจริง (true) หรือเท็จ (false) เท่านั้น
+							<br><strong>boolean_expression _2</strong>	เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ
 							เงื่อนไขเป็นจริง (true) หรือเท็จ (false) เท่านั้น
-							statement 1 เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไข<br>
-							boolean_expression_1 ที่กำหนดเป็นจริง (true)
-							statement 2 เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไข<br>
-							boolean_ expression _2 ที่กำหนดเป็นจริง (true)
-							statement n เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้ทั้งหมด
-							เป็นเท็จ (false)<br>
+							<br><strong>statement 1</strong>	เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไข
+							<br><strong>boolean_expression_1</strong> ที่กำหนดเป็นจริง (true)
+							<br><strong>statement 2</strong> เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไข
+							<br><strong>boolean_ expression _2</strong>	 ที่กำหนดเป็นจริง (true)
+							<br><strong>statement n </strong>	เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้ทั้งหมดเป็นเท็จ (false)</p>
 						<p>flowchart</p>		
 						<p>Example</p>
 						<p>อธิบาย<br>
@@ -263,7 +211,7 @@
 							คำสั่ง else คือ แสดงข้อความว่า พบข้อผิดพลาดในการเลือกตัวดำเนินการ!<br>
 						<strong>บรรทัดที่ 19</strong> แสดงข้อความว่า แล้วเจอกันใหม่!<br>
 						</p>
-						
+					</div>	
 						<!-- Section -->
 				</section>
 
@@ -277,12 +225,15 @@
 							ภายในลูปก็ต่อเมื่อนิพจนีที่กำหนดให้เป็นจริง และเมื่อโปรแกรมทำงานที่ชุดคำสั่งภายในลูปเสร็จสิ้น
 							โปรแกรมจะตรวจสอบนิพจน์ใหม่อีกครั้ง และจะหยุดการทำซ้ำเมื่อนิพจนัที่กำหนดให้เป็นเท็จ ซึ่งมีรูปแบบ
 							การทำงานดังนี้</p>
-						<p>boolean_expression:
-								statement</p>
-						<p>โดยที่ boolean_expression เป็นนิพจน์ที่เป็นเงื่อนไขทางตรรกศาสตร์ไว้ตรวจสอบ
-							เงื่อนไขว่าเป็นจริงหรือเท็จก่อนการทำงานเสมอ<br>
-							statements เป็นชุดคำสั่งที่ต้องการให้มีการทำซ้ำ
-							จากลักษณะการทำงานของคำสั่ง<br></p>
+						<p>
+							<div class="text">
+							boolean_expression:
+							<br><span class="tab">statement</p></span>
+							</div>
+						<p><strong>boolean_expression</strong><br>เป็นนิพจน์ที่เป็นเงื่อนไขทางตรรกศาสตร์ไว้ตรวจสอบ
+							เงื่อนไขว่าเป็นจริงหรือเท็จก่อนการทำงานเสมอ
+							<br><strong>statements</strong><br>เป็นชุดคำสั่งที่ต้องการให้มีการทำซ้ำ
+							จากลักษณะการทำงานของคำสั่ง</p>
 						<p>flowchart</p>		
 						<p>Example</p>
 						<p>อธิบาย<br>
@@ -299,12 +250,15 @@
 							เปินนิพจน์ทางตรรกศาสตร์ ก่อนการทำงานที่ชุดคำสั่งกายในลูปทุกครั้ง ซึ่งเป็นการตรวจสอบกับ
 							ช่วงข้อมูลที่ใด้กำหนดไว้ โดยโปรแกรมจะทำงานที่ชุลดำสั่งกายในลูปเมือเงื่อนไขเป็นจริง ซึ่งจะ
 							เพิ่มหรือลดค่าตัวแปรควบคุมตามคำสั่งที่กำหนดไว้</p>
-						<p>for count in range(value):
-							statements</p>
-						<p>	โดยที่ count ตัวแปรที่ใช้ในการวนลูป<br>
-								value  ช่วงข้อมูลที่เป็นตัวเลขสำหรับการทำซ้ำที่ต้องการประกอบด้วย<br>
-								ข้อมูลตัวเลข 2 ค่าคือค่าเริ่มต้นและดำสุดท้ายของการทำซ้ำ+1<br>
-								statements	เป็นชุดคำสั่งที่ต้องการให้มีการทำซ้ำ</p>
+						<p>
+							<div class="text">
+							for count in range(value):
+							<br><span class="tab">statements</span></p>
+							</div>
+						<p><strong> count</strong> ตัวแปรที่ใช้ในการวนลูป
+							<br><strong>value</strong>	ช่วงข้อมูลที่เป็นตัวเลขสำหรับการทำซ้ำที่ต้องการประกอบด้วย
+								ข้อมูลตัวเลข 2 ค่าคือค่าเริ่มต้นและดำสุดท้ายของการทำซ้ำ+1
+								<br><strong>statements</strong>	เป็นชุดคำสั่งที่ต้องการให้มีการทำซ้ำ</p>
 						<p>flowchart</p>		
 						<p>Example</p>
 						<p>อธิบาย<br>
@@ -318,23 +272,26 @@
 							ทำงานเสร็จให้ตรวจสอบใหมอีกครั้ง<br>
 							ㆍ ถ้าผลการตรวจสอบเป็นเท็จ ให้จบการทำงาน<br>
 						<strong>บรรทัดที่ 5</strong> นำค่าของตัวแปร count คูณกับค่ของตัวแปร R และเก็บผลในตัวแปร total<br>
-						<strong>บรรทัดที่ 6</strong> แสดงผลค่าโดยสารต่อคน จำนวนคน และค่าโดยสารรวม ที่เก็บในตัวแปร<br>
+						<strong>บรรทัดที่ 6</strong> แสดงผลค่าโดยสารต่อคน จำนวนคน และค่าโดยสารรวม ที่เก็บในตัวแปร
 							R,count และ total ตามลำดับ</p>
-						<p>for count in range(value, step):<br>
-							statements
-						<p>โดยที่ count ตัวแปรที่ใช้ในการวนลูป<br>
-							value ช่วงข้อมูลที่เป็นตัวเลขสำหรับการทำซ้ำที่ต้องการ ประกอบด้วย
+						<p>
+							<div class="text">
+							for count in range(value, step):
+							<br><span class="tab">statements</span>
+							</div>
+						<p><strong>count</strong> ตัวแปรที่ใช้ในการวนลูป<br>
+							<strong>value</strong> ช่วงข้อมูลที่เป็นตัวเลขสำหรับการทำซ้ำที่ต้องการ ประกอบด้วย
 							ข้อมูลตัวเลข 2 ค่า คือ ค่าเริ่มต้นและค่าสุดท้ายของการทำซ้ำ + 1<br>
-							step ค่าตัวเลขที่ต้องการบวกเพิ่มในรอบการทำซ้ำ<br>
-							statements เป็นชุดคำสั่งที่ต้องการให้มีการทำซ้ำ</p>
+							<strong>step</strong> ค่าตัวเลขที่ต้องการบวกเพิ่มในรอบการทำซ้ำ<br>
+							<strong>statements</strong> เป็นชุดคำสั่งที่ต้องการให้มีการทำซ้ำ</p>
 								
 							<p>Example</p>
-							<p>อธิบาย<br><strong>บรรทัดที่ 1</strong> แสดงผลข้อความ "เลขคี่ตั้งแต่ 1 ถึง 20 ประกอบด้วย"
+							<p>อธิบาย<br><strong>บรรทัดที่ 1</strong> แสดงผลข้อความ "เลขคี่ตั้งแต่ 1 ถึง 20 ประกอบด้วย"<br>
 							<strong>บรรทัดที่ 2-3</strong> ใช้คำสั่ง for วนลูป โดยตรวจสอบค่าตัวแปร count อยู่ในช่วง 1 ถึง 20 หรือไม่<br>
 								ㆍ ถ้าผลการตรวจสอบเป็นจริงให้ทำงานตามคำสั่งบรรทัดที่ 3 เมื่อทำงาน
 								เสร็จ ให้บวกเพิ่มค่าตัวแปร count ขึ้น 2 ค่า และตรวจสอบใหม่อีกครั้ง<br>
 								ㆍ ถ้าผลการตรวจสอบเป็นเท็จ ให้จบการทำงาน<br>
-							<strong>บรรทัดที่ 3</strong> แสดงผลค่าตัวแปร count แล้วตามด้วยช่องว่าง โดยใช้คำสั่ง end = "* เพื่อ
+							<strong>บรรทัดที่ 3</strong> แสดงผลค่าตัวแปร count แล้วตามด้วยช่องว่าง โดยใช้คำสั่ง end = "" เพื่อ
 								ให้แสดงผลอยู่ในบรรทัดเดียวกัน</p>
 									
 							<p><strong>BREAK</strong><br>คำสั่ง break เป็นคำสั่งที่ใช้ร่วมกับคำสั่งการทำซ้ำ เพื่อหยุดการทำงานก่อนครบตามจำนวน
@@ -366,14 +323,15 @@
 								ค่ามากกว่า 5 ก็จะจบการทำงาน</p>
 							<p><strong>PASS</strong><br>คำสั่ง pass เป็นคำสั่งที่ใช้ในกรณีที่ไม่ต้องการให้มีการดำเนินการใดๆ ของชุดคำสั่ง และผ่านไป
 								ทำงานในชุดคำสั่งที่อยู่บรรทัตถัดไป</p>
-							<p>บรรทัดที่ 1 กำหนดตัวแปร password เป็นข้อมูล list ที่มีรหัสผ่าน 2 ค่าคือ "12345"
+							<p><strong> บรรทัดที่ 1</strong>  กำหนดตัวแปร password เป็นข้อมูล list ที่มีรหัสผ่าน 2 ค่าคือ "12345"
 								และ "1111"<br>
-								บรรทัดที่ 2 รับข้อมูลรหัสผ่านด้วยฟังก์ชัน input() และเก็บค่าในตัวแปร pw<br>
-								บรรทัดที่ 3-7 ใช้คำสั่ง for วนลูปเพื่อนำข้อมูล password แต่ละตัวมาเก็บไว้ในตัวแปร data
+							<strong>บรรทัดที่ 2</strong> รับข้อมูลรหัสผ่านด้วยฟังก์ชัน input() และเก็บค่าในตัวแปร pw<br>
+							<strong>บรรทัดที่ 3-7</strong> ใช้คำสั่ง for วนลูปเพื่อนำข้อมูล password แต่ละตัวมาเก็บไว้ในตัวแปร data
 								เพื่อนำมาเปรียบเทียบกับตัวแปร pw ถ้าข้อมูลไม่ตรงกัน โปรแกรมก็จะผ่าน
 								การทำงานด้วยคำสั่ง pass ในบรรทัดที่ 5 ถ้าตรงกันก็จะแสดงข้อความว่า
 								พบข้อมูลรหัสผ่านนี้ ตามคำสั่งในบรรทัดที่ 7<br>
-								บรรทัดที่ 8 แสดงข้อความว่า แล้วเจอกันใหม่</p>
+							<strong>บรรทัดที่ 8</strong> แสดงข้อความว่า แล้วเจอกันใหม่</p>
+					</div>
 				</section>
 				<section>
 						<header>
@@ -422,17 +380,20 @@
 								</table>
 								<p><strong>การเข้าถึงข้อมูลชนิด String</strong><br></p>
 								<p>1.การเข้าถึงตัวอักขระ 1 ตัว มีรูปแบบการใช้งานดังนี้<br>
-								<p style="background-color:#1c437b;">str1[idx]</p>
-									โดยที่ str1 เป็นข้อมูลชนิด String<br>
-										 idx เป็นลำดับที่ของตัวอักขระที่ต้องการใน str1</p>
+								<p>
+									<div class="text">str1[idx]</div> </p>
+									
+								<p><strong>str1</strong> เป็นข้อมูลชนิด String<br>
+								<strong>idx</strong> เป็นลำดับที่ของตัวอักขระที่ต้องการใน str1</p>
+									
 								<p>2.การเข้าถึงกลุ่มอักขระหรือตัวอักขระที่มากกว่า 1 ตัว มีรูปแบบการใช้งานดังนี้<br>
-								<p style="background-color:#1c437b;">str1[idx1:idx2:|step]</p>
-									โดยที่ str1 เป็นข้อมูลชนิด String<br>
-									idx1 เป็นลำดับที่เริ่มต้นของตัวอักขระที่ต้องการใน str1<br>
-									idx2 เป็นลำดับที่สุดท้าย + 1 ของตัวอักขระที่ต้องการใน str1<br>
-									step เป็นจำนวนตำแหน่งที่ต้องการข้าม + 1 (มีหรือไม่มีก็ได้)</p>
+								<p><div class="text">str1[idx1:idx2:|step]</div></p>
+								<strong>str1</strong> เป็นข้อมูลชนิด String<br>
+								<strong>idx1</strong> เป็นลำดับที่เริ่มต้นของตัวอักขระที่ต้องการใน str1<br>
+								<strong>idx2</strong> เป็นลำดับที่สุดท้าย + 1 ของตัวอักขระที่ต้องการใน str1<br>
+								<strong>step</strong> เป็นจำนวนตำแหน่งที่ต้องการข้าม + 1 (มีหรือไม่มีก็ได้)</p>
 								<p>Example</p>
-								<p>กำหนดให้ str1 ="python programming"</p>
+							
 								<style>
 									table,td, th {
 										border: 1px solid black;
@@ -449,7 +410,7 @@
 								</style>
 								</head>
 								<body>
-									<p><strong>Index</strong></p>
+									<p>กำหนดให้ str1 ="python programming"<br><strong>Index</strong></p>
 										
 									<table>
 										<tr>
@@ -589,6 +550,7 @@
 										<strong>บรรทัดที่ 6-8</strong> ถ้ารหัสผ่านในตัวแปร password มีค่าเท่ากับรหัสผ่านในตัวแปร checkList
 											ให้แสดงข้อความ เข้าสู่ระบบสำเรีจ และออกจากการทำงานของสูป while ด้วยคำสั่ง break<br>
 										<strong>บรรทัดที่ 9-10</strong> ถ้ารหัสผ่านในตัวแปร password มีค่าไม่เท่ากับรหัสผ่านในตัวแปร checkList ให้แสดงข้อความ ข้อมูลไม่ถูกต้อง ลองใหม่อีกครั้ง แล้ววนลูปกลับไปรับข้อมูลรหัสผ่านใหม่</p>
+						</div>
 				</section>	
 				<section>
 						<header>
@@ -596,12 +558,15 @@
 						</header>
 						<div class="content">
 						<p><strong>FUNCTION</strong></p>
-						<p>def functionName():<br>
-							statements</p>
+						<p>
+							<div class="text">
+							def functionName():
+							<br><span class="tab">statements</span></p>
+							</div>
 						<p>และมีรูปแบบการเรียกใช้ฟังก์ดังนี้</p>
-						<p>functionName()</p>
-						<p>โดยที่ functionName เป็นชื่อฟังก์ชัน<br>
-							statements เป็นชุดคำสั่งที่ทำงานในฟังก์ชัน</p>
+						<p><div class="text">functionName()</div></p>
+						<p><strong>functionName</strong> เป็นชื่อฟังก์ชัน<br>
+						<strong>statements</strong> เป็นชุดคำสั่งที่ทำงานในฟังก์ชัน</p>
 						<p>Example</p>
 						<p><strong>บรรทัดที่ 1</strong> สร้างฟังก์ชันชื่อ calwage()<br>
 						<strong>บรรทัดที่ 2</strong> กำหนดตัวแปร total เป็นตัวแปร global เพื่อเก็บผลการคำนวณค่าแรงรวม
@@ -616,14 +581,18 @@
 						<strong>บรรทัดที่ 7</strong> เรียกใช้ฟังก์ชัน calwage() ซึ่งเป็นแบบไม่รับพารามิเตอร์และไม่คืนค่า<br>
 						<strong>บรรทัดที่ 8-10</strong> แสดงผลจำนวนชั่วโมงทำงาน h, อัตราค่าแรง r และค่าแรงรวม total โดย
 							จัดรูปแบบการแสดงผลด้วยฟังก็ชัน format()</p>
-						<p>def functionName(Parameter):<br>
-							statements</p>
+						<p>
+							<div class="text">
+							def functionName(Parameter):
+							<br><span class="tab">statements</span>
+							</div>
+						</p>
 						<p>และมีรูปแบบการเรียกใช้ฟังก์ดังนี้</p>
-						<p>functionName (argument)</p>
-						<p>โดยที่ functionName เป็นชื่อฟังก์ชัน<br>
-							parameter เป็นค่าข้อมูลที่รับมาจากฟังก์ชันที่เรียกใช้<br>
-							statements เป็นชุดคำสั่งที่ทำงานในฟังก์ชัน<br>
-							argument เป็นค่าข้อมูลที่ส่งให้กับฟังก์ชันที่ถูกเรียกใช้</p>
+						<p><div class="text">functionName (argument)</div></p>
+						<p><strong> functionName</strong> เป็นชื่อฟังก์ชัน<br>
+							<strong>parameter</strong> เป็นค่าข้อมูลที่รับมาจากฟังก์ชันที่เรียกใช้<br>
+							<strong>statements</strong> เป็นชุดคำสั่งที่ทำงานในฟังก์ชัน<br>
+							<strong>argument</strong> เป็นค่าข้อมูลที่ส่งให้กับฟังก์ชันที่ถูกเรียกใช้</p>
 						<p>Example</p>
 						<p>อธิบาย</p>
 						<p><strong>บรรทัดที่ 1</strong> สร้างฟังก์ชันชื่อ calwage() ให้มีพารามิเตอร์รับข้อมูล hr และ rate<br>
@@ -636,16 +605,19 @@
 							50 ชั่วโมง และอัตราค่าแรง r เท่ากับ 100 บาทต่อชั่วโมง<br>
 						<strong>บรรทัดที่ 7</strong> เรียกใช้ฟังก์ชัน calwage() ซึ่งเป็นแบบไม่คืนค่า โดยส่งค่าอาร์กิวเมนต์ h และ r<br>
 						<strong>บรรทัดที่ 8-10</strong> แสดงผลจำนวนชั่วโมงทำงาน h, อัตราค่าแรง r และคำแรงรวม total จัดรูปแบบการแสดงผลด้วยฟังก์ชัน format()</p>	
-						<p>def functionName():<br>
-							statements<br>
-							return varValue
+						<p>
+							<div class="text">
+							def functionName():
+							<br><span class="tab">statements<br>
+							return varValue</span></p>
+						</div>
 						<p>และมีรูปแบบการเรียกใช้ฟังก็ชันดังนี้</p>
-						<p>result = functionName()</p>
-						<p>โดยที่ functionName เป็นชื่อฟังก์ชัน<br>
-							statements เป็นชุดคำสั่งที่ทำงานในฟังก์ชัน<br>
-							return เป็นคำสั่งคืนค่าผลการทำงานกลับไปยังฟังก์ชันที่เรียกใช้<br>
-							varValue เป็นค่าข้อมูลที่ต้องการส่งกลับไปยังฟังก์ชันที่เรียกใช้<br>
-							result เป็นตัวแปรที่เก็บค่าข้อมูลผลการทำงานของฟังก์ชัน</p>
+						<p><div class="text">result = functionName()</div></p>
+						<p><strong>functionName</strong> เป็นชื่อฟังก์ชัน<br>
+						<strong>statements</strong> เป็นชุดคำสั่งที่ทำงานในฟังก์ชัน<br>
+						<strong>return</strong> เป็นคำสั่งคืนค่าผลการทำงานกลับไปยังฟังก์ชันที่เรียกใช้<br>
+						<strong>varValue</strong> เป็นค่าข้อมูลที่ต้องการส่งกลับไปยังฟังก์ชันที่เรียกใช้<br>
+						<strong>result</strong> เป็นตัวแปรที่เก็บค่าข้อมูลผลการทำงานของฟังก์ชัน</p>
 						<p>Example</p>
 						<p>อธิบาย</p>
 						<p><strong>บรรทัดที่ 1</strong> สร้างฟังก์ชันชื่อ calwage()<br>
@@ -661,18 +633,21 @@
 							ค่าแรงรวมให้ตัวแปร result<br>
 						<strong>บรรทัดที่ 8-10</strong>  แสดงผลจำนวนชั่วโมงทำงาน h, อัตราค่แรง r และค่าแรงรวม result โดย
 							จัดรูปแบบการแสดงผลด้วยฟังก์ชัน format()</p>
-						<p>det tunctionName(parameter):<br>
-							statement<br>
-							return varValue
+						<p>
+							<div class="text">
+							det tunctionName(parameter):
+							<br><span class="tab">statement<br>
+							return varValue</span></p>
+						</div>
 						<p>และมีรูปแบบการเรียกใช้ฟังก์ชันดังนี้</p>
-						<p>result = functionname(argument)</p>
-						<p>โดยที่ functionName เป็นชื่อฟังก์ชัน<br>
-							parameter เป็นค่าข้อมูลที่รับมาจากฟังก์ชันที่เรียกใช้<br>
-							statement เป็นชุดคำสั่งที่ทำงานในฟังก์ชัน<br>
-							return เป็นคำสั่งคืนค่าผลการทำงานกลับไปยังฟังก์ชันที่เรียกใช้<br>
-							varValue เป็นค่าข้อมูลที่ต้องการส่งกลับไปยังฟังก์ชันที่เรียกใช้<br>
-							argument เป็นค่าข้อมูลที่ส่งให้กับฟังก์ชันที่ถูกเรียกใช้<br>
-							result เป็นตัวแปรที่เก็บค่าข้อมูลผลการทำงานของฟังก์ชัน</p>
+						<p><div class="text">result = functionname(argument)</div></p>
+						<p><strong>functionName</strong> เป็นชื่อฟังก์ชัน<br>
+						<strong>parameter</strong> เป็นค่าข้อมูลที่รับมาจากฟังก์ชันที่เรียกใช้<br>
+						<strong>statement</strong> เป็นชุดคำสั่งที่ทำงานในฟังก์ชัน<br>
+						<strong>return</strong> เป็นคำสั่งคืนค่าผลการทำงานกลับไปยังฟังก์ชันที่เรียกใช้<br>
+						<strong>varValue</strong> เป็นค่าข้อมูลที่ต้องการส่งกลับไปยังฟังก์ชันที่เรียกใช้<br>
+						<strong>argument</strong> เป็นค่าข้อมูลที่ส่งให้กับฟังก์ชันที่ถูกเรียกใช้<br>
+						<strong>result</strong> เป็นตัวแปรที่เก็บค่าข้อมูลผลการทำงานของฟังก์ชัน</p>
 						<p>Example</p>
 						<p>อธิบาย<br>
 						<strong>บรรทัดที่ 1</strong> สร้างฟังก์ชันชื่อ calwage() ให้มีพารามิเตอร์รับข้อมูล hr และ rate<br>
@@ -685,11 +660,73 @@
 							ค่าแรงรวมให้ตัวแปร result<br>
 						<strong>บรรทัดที่ 8- 10</strong> แสดงผลจำนวนชั่วโมงทำงาน h, อัตราค่าแรง r และค่าแรงรวม total โดย
 							จัดรูปแบบการแสดงผลด้วยฟังก์ชัน format()</p>
+					</div>
+				</section>
 				<section>
 						<header>
-							<h2>LESSON 7</h2>
+							<h2>LESSON 6</h2>
 						</header>
 						<div class="content">
+						<p><strong>การเปิดไฟล์ ในภาษา Python</strong></p>
+						</p>ก่อนที่จะเริ่มทำงานกับไฟล์ สิ่งแรกที่คุณต้องทำก็คือต้องเปิดไฟล์ขึ้นมาก่อน ในภาษา Python ใช้ฟังก์ชัน open() สำหรับเปิดไฟล์เพื่อวัตถุประสงค์ที่ต้องการ โดยฟังก์ชันสามารถเปิดเพื่อทำงานได้กับทั้ง Text file และ Binary file นี่เป็นรูปแบบของการใช้งานฟังก์ชันเพื่อเปิดไฟล์</p>
+						<p><div class="text">f = open(filename, mode)</div></p>
+						<p>โดยที่ filename เป็นชื่อหรือ Path ของไฟล์ที่ต้องการเปิด <br> mode เป็นโหมดสำหรับเปิดไฟล์ เช่น เปิดไฟล์เพื่อการอ่านหรือการเขียน เป็นต้น เมื่อการเปิดไฟล์สำเร็จ ฟังก์ชันจะส่งไฟล์ออบเจ็คกลับมาเพื่อนำไปใช้ในการอ่านและเขียนไฟล์ต่อไป สำหรับโหมดในการเปิดไฟล์นั้นมีหลายแบบที่คุณสามารถใช้ได้ นี่เป็นโหมดการเปิดไฟล์ที่ใช้กับฟังก์ชัน open() ในภาษา Python</p>
+						<style>
+							table,td, th {
+								border: 1px solid black;
+							}
+								
+							table {
+								border-collapse: collapse;
+								width: 100%;
+							}
+								
+							th {
+								height: 20px;
+							}
+						</style>
+						</head>
+						<body>
+							<table>
+								<tr>
+									<th>Mode</th>
+									<th>Description</th>
+									
+								</tr>
+								
+								<tr>
+									<td>r</td>
+									<td>เปิดไฟล์เพื่ออ่านข้อมูลจากไฟล์</td>
+									
+								</tr>
+								<tr>
+									<td>w</td>
+									<td>เปิดไฟล์เพื่อเขียนข้อมูลจากไฟล์</td>
+									
+								</tr>
+								<tr>
+									<td>a</td>
+									<td>เปิดไฟล์เพื่อเขียนข้อมูลต่อท้ายไฟล์เดิม</td>
+									
+								</tr>
+								
+						</table>
+							<p><strong>การอ่านข้อมูลจาก Text file</strong></p>
+							<p>Example</p>
+							<p>อธิบาย<br>ในตัวอย่าง เป็นโปรแกรมในการอ่านข้อมูลจาก Text file ในตอนแรกของโปรแกรม เราได้เปิดไฟล์ด้วยฟังก์ชัน open() โดยอาร์กิวเมนต์แรกเป็นชื่อของไฟล์คือ myfile.txt และเราต้องการเปิดไฟล์เพื่ออ่านจึงใส่โหมดของการเปิดเป็น r หลังจากการเปิดสำเร็จฟังก์ชันส่ง File object กลับในตัวแปร f อย่างไรก็ตาม ถ้าหากการเปิดไฟล์ล้มเหลวจะทำให้เกิดข้อผิดพลาด OSError ขึ้น</p>
+							<p><strong>การอ่านข้อมูลทีละบรรทัดด้วยเมธอด readline()</strong></p>
+							<p>โปรแกรมในการอ่านข้อมูลจาก Text file ทีละบรรทัด โดยการใช้คำสั่ง While loop เพื่อวนอ่านข้อมูลจากไฟล์ นี่เป็นโค้ดการทำงานของโปรแกรม</p>
+							<p>Example</p>
+							<p>อธิบาย<br>ในตัวอย่าง เป็นโปรแกรมในการอ่านข้อมูลจากไฟล์ทีละบรรทัดด้วยเมธอด readline() ในตอนแรกเราทำการเปิดไฟล์ myconfig.txt ด้วยโหมดสำหรับการอ่านข้อมูลเช่นเดิม</p>
+							<p><strong>การเขียนข้อมูลลงบน Text file</strong></p>
+							<p>ในการทำงานกับไฟล์ นอกจากการอ่านข้อมูลแล้วยังมีการเขียนข้อมูลลงไปในไฟล์ ในการเขียนโปรแกรมนั้นอาจจะมีข้อมูลบางอย่างที่เราจะต้องเก็บไว้ในรูปแบบของไฟล์ เพื่อนำไปใช้งานในอนาคตหรือใช้กับโปรแกรมอื่นๆ ต่อไปเป็นตัวอย่างของการเขียนข้อมูลลงใน Text file ในภาษา Python โดยโปรแกรมของเราจะทำการบันทึกข้อมูลของพนักงานโดยมีชื่อและภาษาโปรแกรมที่เขียนโดยรับค่าเหล่านี้มาจากคีย์บอร์ด และบันทึกข้อมูลเหล่านั้นไว้ในไฟล์ นี่เป็นโค้ดการทำงานของโปรแกรม</p>
+							<p>Example</p>
+							<p>อธิบาย<br>ในตัวอย่าง เป็นโปรแกรมเขียนข้อมูลลงบนไฟล์โดยโปรแกรมจะรับข้อมูลจากคีย์บอร์ด ในตอนแรกเราได้ทำการเปิดไฟล์ employees.txt เพื่อเขียนข้อมูลใหม่โดยการใช้โหมด w ในโหมดนี้ถ้าหากไม่มีไฟล์ดังกล่าวอยู่โปรแกรมจะสร้างไฟล์ขึ้นมาใหม่ หรือหากมีอยู่จะทำการลบไฟล์เดิมและสร้างใหม่</p>
+
+
+
+
+					</div>
 				</section>
 				
 				<section>
@@ -704,17 +741,17 @@
 							List ได้ แต่ไม่สามารถเพิ่ม เปลี่ยนแปลง หรือลบข้อมูลใน Tuple</p>
 						<p><strong>การเข้าถึงข้อมูลชนิด List และ Tuple</strong></p>
 						<p>1.การเข้าถึงข้อมูล 1 รายการ มีรูปแบบการใช้งานดังนี้</p>
-						<p>list1(idx] หรือ tuple1[idx]</p>
-						<p>โดยที่ list1 เป็นข้อมูลชนิด List<br>
-							tuple1 เป็นข้อมูลชนิด Tuple<br>
-							idx เป็นลำดับที่ของรายการข้อมูลที่ต้องการใน list1 หรือ tuple1</p>
+						<p><div class="text">list1(idx] หรือ tuple1[idx]</div></p>
+						<p><strong>list1</strong> เป็นข้อมูลชนิด List<br>
+						<strong>tuple1</strong>	เป็นข้อมูลชนิด Tuple<br>
+						<strong>idx</strong> เป็นลำดับที่ของรายการข้อมูลที่ต้องการใน list1 หรือ tuple1</p>
 						<p>2.การเข้าถึงกลุ่มข้อมูลหรือข้อมูลที่มากกว่า 1 รายการ มีรูปแบบการใช้งานดังนี้</p>
-						<p>list1(idx1:idx2:|step] หรือ tuple1[idx1:idx2: |step]</p>
-						<p>โดยที่ list1 เป็นข้อมูลชนิด List<br>
-							tuple1 เป็นข้อมูลชนิด Tuple<br>
-							idx1 เป็นลำดับที่เริ่มต้นของรายการข้อมูลที่ต้องการใน list1 หรือ tuple1<br>
-							idx2 เป็นลำดับที่สุดท้าย + 1 ของรายการข้อมูลที่ต้องการใน list1 หรือ tuple<br>
-							step เป็นจำนวนตำแหน่งที่ต้องการข้าม + 1 (มีหรือไม่มีก็ได้)</p>
+						<p><div class="text">list1(idx1:idx2:|step] หรือ tuple1[idx1:idx2: |step]</div></p>
+						<p><strong>list1</strong> เป็นข้อมูลชนิด List<br>
+						<strong>tuple1</strong> เป็นข้อมูลชนิด Tuple<br>
+						<strong>idx1</strong> เป็นลำดับที่เริ่มต้นของรายการข้อมูลที่ต้องการใน list1 หรือ tuple1<br>
+						<strong>idx2</strong> เป็นลำดับที่สุดท้าย + 1 ของรายการข้อมูลที่ต้องการใน list1 หรือ tuple<br>
+						<strong>step</strong> เป็นจำนวนตำแหน่งที่ต้องการข้าม + 1 (มีหรือไม่มีก็ได้)</p>
 						<p>Example</p>
 						<p>1. กำหนดให้ list1 = ["Tiger", "20", "Smile", "bangkok",  "Snail", "081-8188216]</p>
 						<style>
@@ -801,14 +838,17 @@
 							</table>
 						</body>	
 						<p>3. การใช้คำสั่ง for เพื่อเข้าถึงข้อมูลแต่ละตัวใน List และ Tuple มีรูปแบบการใช้งานดังนี้</p>
-						<p>for data in list1:<br>
-							statements<br>
-							for data in tuplel:<br>
-							statements</p>
-						<p>โดยที่ data	เป็นข้อมูลแต่ละค่าใน List หรือ Tuple
-							list1	เป็นข้อมูลชนิด List
-							statements	เป็นชุดคำสั่งที่ต้องการจัดการกับข้อมูล data
-							tuple1	เป็นข้อมูลชนิด Tuple</p>
+						<p>
+							<div class="text">
+							for data in list1:
+							<br><span class="tab">statements</span><br>
+							for data in tuplel:
+							<br><span class="tab">statements</span></p>
+							</div>
+						<p> <strong>data</strong>เป็นข้อมูลแต่ละค่าใน List หรือ Tuple<br>
+						<strong>list1</strong>	เป็นข้อมูลชนิด List<br>
+						<strong>statements</strong>	เป็นชุดคำสั่งที่ต้องการจัดการกับข้อมูล data<br>
+						<strong>tuple1</strong>	เป็นข้อมูลชนิด Tuple</p>
 						<p>ฟังก์ชันสำหรับข้อมูลชนิด List และ Tuple</p>
 						<style>
 							table,td, th {
@@ -906,6 +946,7 @@
 							ข้อความ รหัสผ่านไม่ถูกต้อง ลองใหม่อีกครั้ง ถ้าเป็นแสดงว่าข้อมูลรหัสผ่านถูกต้อง ให้แสดงข้อความ ชื่อผู้ใช้ไม่ถูกต้อง ลองใหม่อีกครั้ง<br>
 							ㆍ ถ้าไม่พบ password ใน plist แสดงว่าทั้งข้อมูลชื่อผู้ใช้และรหัสผ่านไม่ถูกต้อง ให้แสดงข้อความ ข้อมูลไม่ถูกต้อง ลองใหม่อีกครั้ง<br>
 							จากนั้นโปรแกรมจะวนลูป while เพื่อรับชื่อผู้ใช้และรหัสผ่าน และจะออกจากลูป while เมื่อข้อมูลชื่อผู้ใช้และรหัสผ่านถูกต้อง</p>
+					</div>
 				</section>
 				<section>
 						<header>
@@ -914,16 +955,19 @@
 						<div class="content">
 						<p>Dictionary เป็นชนิดข้อมูลที่ประกอบด้วยรายการข้อมูลชนิดใดก็ได้เรียงต่อๆ กัน ภายใน
 						เครื่องหมายวงเล็บปีกกา {...}และดั่นด้วยเครื่องหมายคอมม่า (,) โดยข้อมูลใน Dictionary ประกอบ ด้วย 2 ส่วน ดังนี้</p>
-						<p>dict1 = {key_1: value_I, key_2: value_2, ..., key_n: value_n}</p>
-						<p>โดยที่	dict1	เป็นข้อมูลชนิด Dictionary<br>
-							key_1, key_2,..., key_n	เป็นข้อมูลที่เป็นตัวชี้<br>
-							value_1,value_2,...,value_n	เป็นข้อมูลชนิดใดก็ได้ ที่สามารถอ้างอิงมาจาก key</p>
+						<p><div class="text">dict1 = {key_1: value_I, key_2: value_2, ..., key_n: value_n}</div></p>
+						<p><strong>dict1</strong>	เป็นข้อมูลชนิด Dictionary<br>
+						<strong>key_1, key_2,..., key_n</strong>	เป็นข้อมูลที่เป็นตัวชี้<br>
+						<strong>value_1,value_2,...,value_n</strong>	เป็นข้อมูลชนิดใดก็ได้ ที่สามารถอ้างอิงมาจาก key</p>
 						<p><strong>การเข้าถึงข้อมูลชนิด Dictionary</strong></p>
-						<p>for data in dict1:<br>
-							statements</p>
-						<p>โดยที่	data	เป็นข้อมูลตัวอักขระแต่ละตัวใน Dictionary
-							dict1	เป็นข้อมูลชนิด Dictionary
-							statements	เป็นชุดคำสั่งที่ต้องการจัดการกับข้อมูล data</p>
+						<p>
+							<div class="text">
+							for data in dict1:
+							<br><span class="tab">statements</span></p>
+							</div>
+						<p><strong>data</strong>	เป็นข้อมูลตัวอักขระแต่ละตัวใน Dictionary<br>
+						<strong>dict1</strong>	เป็นข้อมูลชนิด Dictionary<br>
+						<strong>statements</strong>	เป็นชุดคำสั่งที่ต้องการจัดการกับข้อมูล data</p>
 						<p><strong>ฟังก์ชันสำหรับข้อมูลชนิด Dictionary</strong></p>
 						<style>
 							table,td, th {
@@ -1001,11 +1045,14 @@
 							วงเล็บปีกกา {...} และคั่นด้วยเครื่องหมายคอมม่า (,) สามารถเป็นค่าว่างได้ และจะไม่เก็บข้อมูลที่ซ้ำ
 							กัน สามารถเพิ่ม เปลี่ยนแปลง หรือลบข้อมูลในเซตได้เหมือนกับข้อมูลชนิด List แต่จะไม่สามารถ
 							เข้าถึงข้อมูลด้วยเลขตำแหน่ง เนื่องจากการจัดเก็บข้อมูลใน Set จะไม่มีลำดับ</p>	
-						<p>for data in set1:<br>
-							statements</p>
-						<p>โดยที่ data	เป็นข้อมูลแต่ละค่าใน Set
-							set1	เป็นข้อมูลชนิด Set
-							statements	เป็นชุดคำสั่งที่ต้องการจัดการกับข้อมูล data</p>
+						<p>
+							<div class="text">
+							for data in set1:
+							<br><span class="tab">statements</span></p>
+							</div>
+						<p><strong>data</strong>	เป็นข้อมูลแต่ละค่าใน Set<br>
+						<strong>set1</strong>	เป็นข้อมูลชนิด Set<br>
+						<strong>statements</strong>	เป็นชุดคำสั่งที่ต้องการจัดการกับข้อมูล data</p>
 						<p><strong>ฟังก์ชันสำหรับข้อมูลชนิด Set</strong></p>
 						<style>
 							table,td, th {
@@ -1088,6 +1135,7 @@
 							ภาษาอังกฤษและคณิตศาสตร์ทั้งหมด<br>
 						<strong>บรรทัดที่ 14-15</strong> แสดงผลข้อมูลเลขที่ผู้เรียน total1.difference(both) และจำนวนคน
 							len(total 1.difference(both)) ของคนที่ไม่เรียนทั้งสองวิชา</p>
+					</div>
 				</section>		
 						<!-- <header>
 							<h2>Elements</h2>
