@@ -42,7 +42,7 @@
 	padding: 20px;
 	}
 	.text2 {
-	background-color: #ffc550;
+	background-color: #fed46e;
 	color: black;
 	border: 5px solid #000;
 	border-radius: 20px;
@@ -771,7 +771,22 @@
 						<p><strong>boolean_expression</strong>  เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ เงื่อนไขเป็นจริง (true) หรือเท็จ (false) เท่านั้น
 						<strong>statements</strong>	เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้เป็นจริง (true)</p>
 						<p>flowchart</p>
-						<p>Example</p>
+						<p><strong>Example</strong></p>
+						<p>
+							<div class="text1">
+								key=int(input("Press 1:"))
+								if key == 1:
+    							<br><span class="tab">score = float(input("fill in the score:"))</span>
+    							<br><span class="tab">percent = score/35*100</span>
+								<br><span class="tab">print("score %.1f \nthe percentage is %.1f%%" %(score, percent))</span>
+								<br>print("see you again!")
+
+							</div>
+						</p>
+						<p>
+							<strong>OUTPUT</strong>
+							
+						</p>
 						<p>อธิบาย<br>
 						<strong>บรรทัดที่ 1</strong>รับข้อมูลตัวเลขและแปลงค่าข้อมูลเป็นชนิด int แล้วเก็บค่ในตัวแปร key<br>
 						<strong>บรรทัดที่ 2</strong> ตรวจสอบค่าข้อมูลในตัวแปร key ว่ามีค่าเท่ากับ 1 หรือไม่<br> 
@@ -804,7 +819,21 @@
 							<strong>statements_1</strong>  เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้เป็นจริง (true)<br>
 							<strong>statements_2</strong>  เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้เป็นจริง (false)<br>
 						<p>flowchart</p>		
-						<p>Example</p>
+						<p><strong>Example</strong></p>
+						<p>
+							<div class="text1">
+								a = int(input("input a: "))<br>
+								b = int(input("input b: "))<br>
+								if a < b:
+								<br><span class="tab"> print(a, "<", b)</span>
+								else:
+								<br><span class="tab"> temp = a<br>
+									a = b<br>
+									b = temp<br>
+									print(a, "and", b, "switched")</span>
+								<br>print(a, ",", b)
+							</div>
+						</p>
 						<p>อธิบาย<br>
 						<strong>บรรทัดที่ 1-2</strong> รับข้อมูลตัวเลข 2 ค่า และแปลงค่าข้อมูลเป็นชนิด int แล้วเก็บค่าในตัวแปร
 							a และ b ตามลำดับ<br>
@@ -835,8 +864,9 @@
 							<br>.
 							<br>.
 							<br>else:
-							<br><span class="tab">statement_n</p></span>	
+							<br><span class="tab">statement_n</span>	
 							</div>
+						</p>
 						<p><strong>boolean_expression_1</strong>	เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ เงื่อนไขเป็นจริง (true) หรือเท็จ (false) เท่านั้น
 							<br><strong>boolean_expression _2</strong>	เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ
 							เงื่อนไขเป็นจริง (true) หรือเท็จ (false) เท่านั้น
@@ -846,7 +876,30 @@
 							<br><strong>boolean_ expression _2</strong>	 ที่กำหนดเป็นจริง (true)
 							<br><strong>statement n </strong>	เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้ทั้งหมดเป็นเท็จ (false)</p>
 						<p>flowchart</p>		
-						<p>Example</p>
+						<p<strong>Example</strong></p>
+						<p>
+							<div class="text1">
+								print("Menu")<br>
+								print("1.Plus")<br>
+								print("2.Minus")<br>
+								print("3.Multiplied")<br>
+								print("4.Divide")<br>
+								key = int(input("slected press 1, 2, 3 or 4: "))<br>
+								a = int(input("Enter numbers1: "))<br>
+								b = int(input("Enter numbers2: "))<br>
+								if key == 1:
+								<br><span class="tab">print("positive effect of", a, "+", b, "="(a+ b))</span>
+								<br>elif key == 2:
+								<br><span class="tab">print("negative effect of", a, "-", b, "=", (a-b))</span>
+								<br>elif key == 3:
+								<br><span class="tab"> print("multiply result of", a, "*", b, "=", (a*b))</span>
+								<br>elif key == 4:
+								<br><span class="tab">print("quotient of", a, "/",b, "=",(a/b))</span>
+								<br>else:
+								<br><span class="tab">print("An error was encountered in selecting the operator!")</span>
+								<br>print("see you again!")
+							</div>
+						</p>
 						<p>อธิบาย<br>
 						<strong>บรรทัดที่ 1-5</strong> แสดงข้อความตัวดำเนินการสำหรับการบวก ลบ คูณ และหาร ตามลำดับ<br>
 						<strong>บรรทัดที่ 6</strong> รับข้อมูลตัวเลขเพื่อเลือกตัวดำเนินการ และแปลงค่าข้อมูลเป็นชนิด int
@@ -876,14 +929,24 @@
 						<p>
 							<div class="text">
 							boolean_expression:
-							<br><span class="tab">statement</p></span>
+							<br><span class="tab">statement</span>
 							</div>
+						</p>
 						<p><strong>boolean_expression</strong><br>เป็นนิพจน์ที่เป็นเงื่อนไขทางตรรกศาสตร์ไว้ตรวจสอบ
 							เงื่อนไขว่าเป็นจริงหรือเท็จก่อนการทำงานเสมอ
 							<br><strong>statements</strong><br>เป็นชุดคำสั่งที่ต้องการให้มีการทำซ้ำ
 							จากลักษณะการทำงานของคำสั่ง</p>
 						<p>flowchart</p>		
-						<p>Example</p>
+						<p><strong>Example</strong></p>
+						<p> 
+							<div class="text1">
+								count = 1<br>
+								total = 0<br>
+								while count <= 20:
+							<br><span class="tab">total += count<br>count += 1</span>	
+							<br>print("Sum from 1 to 20 =", total)
+							</div>
+						</p>
 						<p>อธิบาย<br>
 						<strong>บรรทัดที่ 1-2</strong> ประกาศตัวแปร count เป็นข้อมูลชนิด int มีค่าเท่ากับ 1 (ใช้เป็นตัวนับ)
 							และตัวแปร total เป็นข้อมูลชนิด int มีค่าเท่ากับ 0 (ใช้เก็บค่าผลรวม)<br>
@@ -901,14 +964,26 @@
 						<p>
 							<div class="text">
 							for count in range(value):
-							<br><span class="tab">statements</span></p>
+							<br><span class="tab">statements</span>
 							</div>
+						</p>
 						<p><strong> count</strong> ตัวแปรที่ใช้ในการวนลูป
 							<br><strong>value</strong>	ช่วงข้อมูลที่เป็นตัวเลขสำหรับการทำซ้ำที่ต้องการประกอบด้วย
 								ข้อมูลตัวเลข 2 ค่าคือค่าเริ่มต้นและดำสุดท้ายของการทำซ้ำ+1
 								<br><strong>statements</strong>	เป็นชุดคำสั่งที่ต้องการให้มีการทำซ้ำ</p>
 						<p>flowchart</p>		
-						<p>Example</p>
+						<p><strong>Example</strong></p>
+							<p>
+								<div class="text1">
+									N = int(input("number of students: "))<br>
+									avg = 0<br>
+									total = 0<br>
+									for count in range(1, (N + 1)):
+								<br><span class="tab"> score = float(input("test scores of the students" + str(count) + ":"))<br>total += score</span>
+								arg = total / N<br>
+								print("point average =", avg)<br>
+								</div>
+							</p>
 						<p>อธิบาย<br>
 						<strong>บรรทัดที่ 1</strong> รับข้อมูลค่าโดยสารต่อคนด้วยฟังก์ชัน เnput() และแปลงคำข้อมูลเป็นชนิด
 							int แล้วเก็บคำในตัวแปร R<br>
@@ -933,7 +1008,14 @@
 							<strong>step</strong> ค่าตัวเลขที่ต้องการบวกเพิ่มในรอบการทำซ้ำ<br>
 							<strong>statements</strong> เป็นชุดคำสั่งที่ต้องการให้มีการทำซ้ำ</p>
 								
-							<p>Example</p>
+							<p><strong>Example</strong></p>
+							<p>
+								<div class="text1">
+									print("Odd numbers from 1 to 20 consist of")<br>
+									for count in range(1, 21, +2):
+								<br><span class="tab">print(count, end="")</span>
+								</div>
+							</p>
 							<p>อธิบาย<br><strong>บรรทัดที่ 1</strong> แสดงผลข้อความ "เลขคี่ตั้งแต่ 1 ถึง 20 ประกอบด้วย"<br>
 							<strong>บรรทัดที่ 2-3</strong> ใช้คำสั่ง for วนลูป โดยตรวจสอบค่าตัวแปร count อยู่ในช่วง 1 ถึง 20 หรือไม่<br>
 								ㆍ ถ้าผลการตรวจสอบเป็นจริงให้ทำงานตามคำสั่งบรรทัดที่ 3 เมื่อทำงาน
@@ -944,7 +1026,20 @@
 									
 							<p><strong>BREAK</strong><br>คำสั่ง break เป็นคำสั่งที่ใช้ร่วมกับคำสั่งการทำซ้ำ เพื่อหยุดการทำงานก่อนครบตามจำนวน
 								รอบหรือตามเงื่อนไขที่กำหนด โดยไม่สนใจคำสั่งอื่นๆ ที่เหลืออยู่ภายในบล็อกของการทำซ้ำ</p>
-							<p>Example</p>
+							<p><strong>Example</strong></p>
+							<p>
+								<div class="text1">
+									while True:
+								<br><span class="tab">ch = input("character input: ")
+									<br>if 'a' <= ch <= 'z':
+									<br><span class="tab">print(ch, "in english alphabet")</span>
+									<br>elif 'A' <= ch <= 'Z':
+									<br><span class="tab">print(ch, "in english alphabet")</span>
+									<br>else:
+									<br><span class="tab">print(ch, "not english letters")</span>
+									<br>break</span>
+								</div>
+							</p>
 							<p>อธิบาย<br><strong>บรรทัดที่ 1</strong> วนลูปด้วยคำสั่ง while True เพื่อให้โปรแกรมทำงานตามชุดคำสั่งภายในลูป
 								บรรทัดที่ 2-9<br>
 							<strong>บรรทัดที่ 2</strong> รับข้อมูลตัวอักขระด้วยฟังก์ชัน input() แล้วเก็บค่าในตัวแปร ch<br>
@@ -954,7 +1049,19 @@
 								ตัวอักษรในภาษาอังกฤษ แล้ว break การทำงาน และออกจากคำสั่งลูป</p>
 							<p><strong>CONTINUE</strong><br>คำสั่ง continue เป็นคำสั่งที่ทำงานต่างจากคำสั่ง break โดยคำสั่ง continue จะเป็นคำสั่งที่
 								บังคับให้โปรแกรมข้ามไปทำงานในรอบต่อไปทันที โดยไม่สนใจคำสั่งที่เหลืออยู่ในลูป</p>
-							<p>Example</p>
+							<p><strong>Example</strong></p>
+							<p>
+								<div class="text1">
+									count = 1<br>
+									while count <= 5:
+								<br><span class="tab">score = float(input("test scores of the students" + str(count) + ":"))<br>
+									if score < 0 or score > 100:
+									<br><span class="tab">print("Incorrect score information")<br>
+										continue</span>
+									<br>print("The score information is correct.")<br>
+									count += 1
+								</div>
+							</p>
 							<p>อธิบาย<br><strong>บรรทัดที่ 1</strong> กำหนดตัวแปร count มีคำเท่ากับ 1 ใช้เป็นตัวแปรควบคุมจำนวนครั้งของ
 								การทำซ้ำ<br>
 							<strong>บรรทัดที่ 2-8</strong> เป็นคำสั่งทำซ้ำด้วยคำสั่ง while โดยทำซ้ำจนกว่าค่าตัวแปร count จะมีค่า
@@ -971,7 +1078,21 @@
 								ค่ามากกว่า 5 ก็จะจบการทำงาน</p>
 							<p><strong>PASS</strong><br>คำสั่ง pass เป็นคำสั่งที่ใช้ในกรณีที่ไม่ต้องการให้มีการดำเนินการใดๆ ของชุดคำสั่ง และผ่านไป
 								ทำงานในชุดคำสั่งที่อยู่บรรทัตถัดไป</p>
-							<p><strong> บรรทัดที่ 1</strong>  กำหนดตัวแปร password เป็นข้อมูล list ที่มีรหัสผ่าน 2 ค่าคือ "12345"
+							<p><strong>Example</strong></p>
+								<p>
+									<div class="text1">
+										password = ["12345", "1111"]<br>
+										pw = input("password is: ")<br>
+										for data in password:
+									<br><span class="tab"> if data != pw:
+										<br><span class="tab">pass</span>
+										<br>else:
+										<br><span class="tab">print("Found this password.")</span>
+										<br>print("see you again")
+									</div>
+								</p>
+								<p>อธิบาย<br>
+								<strong> บรรทัดที่ 1</strong>  กำหนดตัวแปร password เป็นข้อมูล list ที่มีรหัสผ่าน 2 ค่าคือ "12345"
 								และ "1111"<br>
 							<strong>บรรทัดที่ 2</strong> รับข้อมูลรหัสผ่านด้วยฟังก์ชัน input() และเก็บค่าในตัวแปร pw<br>
 							<strong>บรรทัดที่ 3-7</strong> ใช้คำสั่ง for วนลูปเพื่อนำข้อมูล password แต่ละตัวมาเก็บไว้ในตัวแปร data
