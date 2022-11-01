@@ -49,12 +49,40 @@
 	margin: 20px;
 	padding: 20px;
 	}
-	div.img-resize {
-	width: 64px;
-	height: 64px;
-	overflow: hidden;
-	text-align: center;
+	
+	
+	.image_resize {
+        width: 200px;
+		
+		margin: auto auto;
+ 	 	display: block;
 	}
+	.btn {
+  	border: 2px solid black;
+  	border-radius: 5px;
+  	background-color: white;
+  	color: black;
+  	padding: 1px 20px;
+  	font-size: 16px;
+  	cursor: pointer;
+	}
+
+
+	.success {
+  	border-color: #5d9cec;
+  	color: black;
+	}
+
+	.success:hover {
+ 	 background-color: #1c437b;
+ 	 color: white;
+	}
+	button{
+    
+    width:45%;
+    margin-left:28%;
+    margin-right:30%;
+}
 </style>
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -79,10 +107,10 @@
 						</header>
 						<div class="content">
 							<p class="indent"><strong>Python</strong>เป็นภาษาโปรแกรมที่พัฒนาขึ้นโดย Guido van Rossum และทีมพัฒนา
-								วัตถุประสงค์เพื่อพัฒนาภาษาที่ใช้สร้างโปรแกรมด้วยโดรงสร้างที่เรียบง่าย และเป็นภาษาแบบ
+								วัตถุประสงค์เพื่อพัฒนาภาษาที่ใช้สร้างโปรแกรมด้วยโครงสร้างที่เรียบง่าย และเป็นภาษาแบบ
 								เปิดเผยรหัส (Open Source) ที่มีการนำไปพัฒนาต่อๆกัน ทำให้ Python มีความสามารถมากขึ้น
 								มีคุณลักษณะที่หลากหลาย สามารถใช้พัฒนางานด้านต่างๆ ได้เช่น งานด้านวิทยาศาสตร์ งานด้าน
-								ฐานข้อมูล ปัญญาประดิษฐ์ เป็นตัน และสนับสนุนการทำงานบนทุกแพลตฟอร์ม โดยมีคุณสมบัติที่
+								ฐานข้อมูล ปัญญาประดิษฐ์ เป็นต้น และสนับสนุนการทำงานบนทุกแพลตฟอร์ม โดยมีคุณสมบัติที่
 								โดดเด่นดังนี้<br>
 								ㆍ ง่ายต่อการเรียนและเข้าใจ เนื่องจากโครงสร้างภาษาไม่มีความชับซ้อน<br>
 								ㆍ มีการจัดการหน่วยความจำแบบอัตโนมัติ สามารถจัดการพื้นที่ในหน่วยความจำได้อย่าง
@@ -99,20 +127,14 @@
 							<h2>Download</h2>
 						</header>
 						<div class="content">
+							<img src="images/4.png" class="image_resize">
+							<button class="btn success" onclick="location.href='https://code.visualstudio.com/download'">Click To Download</button>
+							<img src="images/3.png" class="image_resize">
+							<button class="btn success" onclick="location.href='https://git-scm.com/downloads'">Click To Download</button>
+							<img src="images/5.png" class="image_resize">
+							<button class="btn success" onclick="location.href='https://www.python.org/downloads/'">Click To Download</button>
 							
 							
-							
-							<p><strong>Visual Studio Code</strong> <a href="https://code.visualstudio.com/download">Click To Download</a></p>
-							<p><strong>Git Bash</strong> <a href="https://git-scm.com/downloads">Click To Download</a></p>
-							<p><strong>Python</strong> <a href="https://www.python.org/downloads/">Click To Download</a></p>
-							<ul class="feature-icons">
-								<li class="icon solid fa-laptop">Consequat tempus</li>
-								<li class="icon solid fa-bolt">Etiam adipiscing</li>
-								<li class="icon solid fa-signal">Libero nullam</li>
-								<li class="icon solid fa-cog">Blandit condimentum</li>
-								<li class="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-								<li class="icon solid fa-code">Nibh amet venenatis</li>
-							</ul>
 						</div>
 					</section>
 
@@ -124,10 +146,10 @@
 						<div class="content">
 							<p><strong>ตัวแปร (Variable)</strong>หมายถึง ชื่อหรือสัญลักษณ์ที่กำหนดขึ้นเพื่ออ้างอิงถึงตำแหน่ง
 								หน่วยความจำที่ใช้เก็บข้อมูล ซึ่งสามารถเก็บข้อมูลที่มีชนิดของข้อมูลแตกต่างกันได้ และสามารถ
-								เปลี่ยนแปลงคำข้อมูลได้ตลอดเวลา</p>
+								เปลี่ยนแปลงค่าข้อมูลได้ตลอดเวลา</p>
 							<p><strong>กฎการตั้งชื่อตัวแปรในภาษา Python</strong></p>
-							<p>ㆍชื่อตัวแปรต้องขึ้นตันด้วย a-z2, A-Z หรือเครื่องหมาย_ (Underscore)<br>
-								ㆍ ภายในชื่อตัวแปรประกอบด้วย a-2, A-Z, 0-9 หรือเครื่องหมาย _(Underscore)
+							<p>ㆍชื่อตัวแปรต้องขึ้นตันด้วย a-z, A-Z หรือเครื่องหมาย_ (Underscore)<br>
+								ㆍ ภายในชื่อตัวแปรประกอบด้วย a-z, A-Z, 0-9 หรือเครื่องหมาย _(Underscore)
 								ห้ามเป็นช่องว่างหรือเครื่องหมายอื่นๆ<br>
 								ㆍการใช้ตัวอักษรพิมพ์เล็กและพิมพ์ใหญ่จะแตกต่างกัน เรียกว่าเป็น Case Sensitive<br>
 								ㆍ ห้ามใช้ชื่อซ้ำกับคำสงวน (Reserved Word) ในภาษา Python ดังนี้</p>
@@ -202,7 +224,7 @@
 									</table>
 									<p><strong>ชนิดของข้อมูล (Data Type)</strong></p>
 									<P><strong>ข้อมูลชนิดตัวเลข (Number)</strong></P>
-									<P>1.ข้อมูลเลขจำนวนเต็ม (Integer Number) ประกอบด้วยเลขจำนวนเต็มที่เป็นทั้งคำบวก
+									<P>1.ข้อมูลเลขจำนวนเต็ม (Integer Number) ประกอบด้วยเลขจำนวนเต็มที่เป็นทั้งค่าบวก
 										ค่าลบ และยังสามารถใช้กับเลขฐานได้ดังนี้<br>
 										ㆍ เลขฐานสอง ใช้ตัวอักษร 0b นำหน้า<br>
 										ㆍเลขฐานแปด ใช้ตัวอักษร 0o นำหน้า<br>
@@ -222,18 +244,17 @@
 										</div>
 									</p>
 									<p><strong>ข้อมูลแบบเรียงลำดับ (Sequence)</strong></p>
-									<p>1. ข้อมูลชนิดข้อความ (string) เป็นข้อมูลที่ประกอบด้วยข้อความ ตัวอักษร ตัวเลขที่ไม่
-										สามารถคำนวณได้ จำนวนตั้งแต่ 1 ตัว มาเรียงต่อกันภายในเครื่องหมาย double quote
+									<p>1. ข้อมูลชนิดข้อความ (string) เป็นข้อมูลที่ประกอบด้วยข้อความ ตัวอักษร ตัวเลขที่ไม่สามารถคำนวณได้ จำนวนตั้งแต่ 1 ตัว มาเรียงต่อกันภายในเครื่องหมาย double quote
 										("...") หรือเครื่องหมาย single quote ('...') ตัวอย่างเช่น
 										<div class="text">strA = "3020158" #ตัวแปร stA มีค่าเท่ากับ 3020158</div><br>
-										2. ข้อมูลชนิตลิสต์ (List) เป็นข้อมูลที่ประกอบด้วยรายการข้อมูลชนิดใดๆ เรียงต่อกันภายใน
-										เครื่องหมายวงเล็บก้ามปู [...] และคั่นด้วยเครื่องหมายคอมม่า (,) ข้อมูสในเครื่องหมาย
+										2. ข้อมูลชนิดลิสต์ (List) เป็นข้อมูลที่ประกอบด้วยรายการข้อมูลชนิดใดๆ เรียงต่อกันภายใน
+										เครื่องหมายวงเล็บก้ามปู [...] และคั่นด้วยเครื่องหมายคอมม่า (,) ข้อมูลในเครื่องหมาย
 										วงเล็บก้ามปู [...] สามารถเป็นค่าว่างได้ ซึ่งจะเรียกว่า ลิสต์ว่าง (Empty List)<br> 
 										ตัวอย่างเช่น<div class="text"> listA = ["Anna",20,"Bangkok","Aree",22,"Changmai"]<br> #ตัวแปร listA มีค่าเท่ากับ ["Anna",20,"Bangkok","Aree",22,"Changmai"]<br>
 										listA.append("Adam")<br> #ตัวแปร listA มีค่าเท่ากับ ["Anna",20,"Bangkok","Aree",22,"Changmai","Adam"]</div>
 										</p>
 									<p>3.ข้อมูลชนิดทูเปิล (Tuple) เป็นข้อมูลที่ประกอบด้วยรายการข้อมูลชนิดใดๆ เรียงต่อกัน
-										คั่นด้วยเครื่องหมายคอมม่า (,)และสามารถเป็นด่ว่างได้เหมือนกับข้อมูลชนิตลิสต์ แต่
+										คั่นด้วยเครื่องหมายคอมม่า (,)และสามารถเป็นค่าว่างได้เหมือนกับข้อมูลชนิดลิสต์ แต่
 										จะเรียงต่อกันภายในเครื่องหมายวงเล็บ (...) หรือไม่ต้องมีเครื่องหมายวงเล็บ (...) ครอบ
 										ก็ได้ และไม่สามารถเพิ่ม เปลี่ยนแปลง หรือลบข้อมูลในทูเปิลได้<br>
 										ตัวอย่างเช่น<div class="text">tupleA = ("Anna" , 20, "Bangkok", "Aree", 22, "Chiangmal")
@@ -242,7 +263,7 @@
 									<p><strong>ข้อมูลชนิดเซต (Set)</strong></p>
 									<p>ประกอบด้วยรายการข้อมูลชนิดใดๆ เรียงต่อกัน คั่นด้วยเครื่องหมาย
 										คอมม่า (,) สามารถเป็นค่าว่างได้ และสามารถเพิ่ม เปลี่ยนแปลง หรือลบข้อมูลในเซตได้เหมือนกับ
-										ข้อมูลชนิตลิสต์ แต่มีข้อแตกต่างกันคือ ข้อมูลชนิดเซตจะเรียงต่อกันภายในเครื่องหมายวงเล็บปีกกา
+										ข้อมูลชนิดลิสต์ แต่มีข้อแตกต่างกันคือ ข้อมูลชนิดเซตจะเรียงต่อกันภายในเครื่องหมายวงเล็บปีกกา
 										{...} การจัดเก็บข้อมูลจะไม่มีลำดับ กล่าวคือ ไม่สามารถเข้าถึงข้อมูลด้วยเลขตำแหน่งข้อมูล และ
 										จะไม่เก็บข้อมูลที่ซ้ำกัน<br>
 										ตัวอย่างเช่น<div class="text">setA = {"Anna" , 20, "Bangkok", "Aree", 22, "Chiangmal"}
@@ -266,7 +287,7 @@
 										print(type(c))<br>
 										#ชนิดข้อมูลของตัวแปร c คือ class 'list'</div></p>
 									<p><strong>ตัวดำเนินการ (Operator)</strong></p>
-									<p><strong>ตัวดำเนินการกำหนดค่า (Assignment Operator)</strong>ตัวดำเนินการประเภทนี้ ใช้สำหรับกำหนดค่าให้กับตัวแปรทางด้านซ้ายของตัวดำเนินการ =</p>	
+									<p><strong>ตัวดำเนินการกำหนดค่า (Assignment Operator)</strong>ตัวดำเนินการประเภทนี้ ใช้สำหรับกำหนดค่าให้กับตัวแปรทางด้านซ้ายของตัวดำเนินการ </p>	
 									
 								<style>
 									table,td, th {
@@ -741,13 +762,37 @@
 												</table>
 											<p>ตัวอย่างเช่น<div class="text">(2+3)*5 =25</div></p>
 											<p><strong>การรับข้อมูลด้วยฟังก์ชัน (input)</strong></p>
-											<p>บรรทัดที่ 1 รับข้อมูลชื่อ ด้วยฟังก์ชัน input() เก็บค่าในตัวแปร name เป็นชนิด string<br>
-												บรรทัดที่ 2 รับข้อมูลอายุ เก็บค่าในตัวแปร age และแปลงข้อมูลเป็นชนิด integer<br>
-												บรรทัดที่ 3 รับข้อมูลน้ำหนัก เก็บค่าในตัวแปร weight และแปลงข้อมูลเป็นชนิด float<br>
-												บรรทัดที่ 4 แสดงผลค่าในตัวแปร name ด้วยฟังก์ชัน print()<br>
-												บรรทัดที่ 5 แสดงผลค่าในตัวแปร age ซึ่งมีชนิดเป็น integer จึงต้องแปลงข้อมูลกลับ
+											<p>
+												<div class="text1">
+													<strong>EXAMPLE</strong>
+													<br>name = input("Please enter your name:")
+													<br>age = int(input("Please enter your age: "))
+													<br>weight = float(input("please enter your weight: "))
+													<br>print('name: '+name)
+													<br>print('age: '+str(age)+" years old")
+													<br>print('weight: '+str(weight)+" kg")
+					
+												</div>
+											</p>
+											<p>
+												<div class="text2">
+													<strong>OUTPUT</strong>
+													<br>Please enter your name:program
+													<br>Please enter your age: 18
+													<br>name: program
+													<br>age: 18 years old
+													<br>weight: 47.8 kg
+					
+												</div>
+											</p>
+											
+											<p> - รับข้อมูลชื่อ ด้วยฟังก์ชัน input() เก็บค่าในตัวแปร name เป็นชนิด string<br>
+												 - รับข้อมูลอายุ เก็บค่าในตัวแปร age และแปลงข้อมูลเป็นชนิด integer<br>
+												 - รับข้อมูลน้ำหนัก เก็บค่าในตัวแปร weight และแปลงข้อมูลเป็นชนิด float<br>
+												 - แสดงผลค่าในตัวแปร name ด้วยฟังก์ชัน print()<br>
+												 - แสดงผลค่าในตัวแปร age ซึ่งมีชนิดเป็น integer จึงต้องแปลงข้อมูลกลับ
 												เป็นชนิด string<br>
-												บรรทัดที่ 6 แสดงผลค่าในตัวแปร weight ซึ่งมีชนิดเป็น float จึงต้องแปลงข้อมูลกลับ เป็นชนิด string</p>
+												 - แสดงผลค่าในตัวแปร weight ซึ่งมีชนิดเป็น float จึงต้องแปลงข้อมูลกลับ เป็นชนิด string</p>
 											
 							<!-- Section -->
 				
@@ -769,37 +814,34 @@
 							</div>
 						</p>
 						<p><strong>boolean_expression</strong>  เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ เงื่อนไขเป็นจริง (true) หรือเท็จ (false) เท่านั้น
-						<strong>statements</strong>	เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้เป็นจริง (true)</p>
-						<p>flowchart</p>
-						<p><strong>Example</strong></p>
+						<br><strong>statements</strong>	เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้เป็นจริง (true)</p>
+						<p><strong>flowchart</strong></p>
+						<img src="images/for.png" width="400">
+						
 						<p>
 							<div class="text1">
-								key=int(input("Press 1:"))
-								if key == 1:
+								<strong>EXAMPLE</strong>
+								<br>key=int(input("Press 1:"))
+								<br>if key == 1:
     							<br><span class="tab">score = float(input("fill in the score:"))</span>
     							<br><span class="tab">percent = score/35*100</span>
-								<br><span class="tab">print("score %.1f \nthe percentage is %.1f%%" %(score, percent))</span>
+								<br><span class="tab">print("score = %.1f \nthe percentage is %.1f%%" %(score, percent))</span>
 								<br>print("see you again!")
 
 							</div>
 						</p>
 						<p>
-							<strong>OUTPUT</strong>
-							
+							<div class="text2">
+								<strong>OUTPUT</strong>
+								<br>Press 1:1
+								<br>fill in the score:18.5
+								<br>score = 18.5 
+								<br>the percentage is 52.9%
+								<br>see you again!
+
+							</div>
 						</p>
-						<p>อธิบาย<br>
-						<strong>บรรทัดที่ 1</strong>รับข้อมูลตัวเลขและแปลงค่าข้อมูลเป็นชนิด int แล้วเก็บค่ในตัวแปร key<br>
-						<strong>บรรทัดที่ 2</strong> ตรวจสอบค่าข้อมูลในตัวแปร key ว่ามีค่าเท่ากับ 1 หรือไม่<br> 
-						ㆍ ถ้าผลการวจสอบเป็นจริง โปรแกรมจะทำงานที่ชุดคำสั่งในบรรทัดที่ 3-5<br>
-						ㆍ ถ้าผลการตรวจสอบเป็นเท็จ โปรแกรมจะข้ามการทำงานของชุดคำสั่งในบรรทัดที่ 3-5 ไปทำงานที่คำสั่งในบรรทัดที่ 6<br>
-						<strong>บรรทัดที่ 3</strong> รับข้อมูลคะแนนและแปลงค่าข้อมูลเป็นชนิด float แล้วเก็บค่าในตัวแปร score<br>
-						<strong>บรรทัดที่ 4</strong> คำนวณคะแนนเปอร์เซ็นต์และเก็บผลลัพธ์ในตัวแปร percent<br>
-						<strong>บรรทัดที่ 5-6</strong> แสดงผลข้อมูลคะแนนและเปอร์เซ็นต์ แต่เนื่องจากข้อมูลเปอร์เซ็นต์ที่ได้จาก
-						การคำนวณ จะให้ผลเป็นเลขทศนิยมที่มีตำแหน่งทศนิยมไม่ทราบจำนวน
-						จึงใช้รหัสการแสดงผลและส่วนขยายร่วมกับฟังก์ชัน print() เพื่อจัดรูปแบบ
-						การแสดงผลให้มีทศนิยม 1 ตำแหน่ง<br>
-						<strong>บรรทัดที่ 7</strong> แสดงผลข้อความ see you again!
-						</p>
+						
 						
 						<!-- IF....ELSE -->
 						
@@ -818,10 +860,11 @@
 						<p><strong> boolean_expression</strong>  เป็นนิพจน์เงื่อนไขทางตรรกศาสตร์ ซึ่งมีผลการตรวจสอบ เงื่อนไขเป็นจริง (true) หรือเท็จ (false) เท่านั้น<br>
 							<strong>statements_1</strong>  เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้เป็นจริง (true)<br>
 							<strong>statements_2</strong>  เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้เป็นจริง (false)<br>
-						<p>flowchart</p>		
-						<p><strong>Example</strong></p>
+						<p><strong>flowchart</strong></p>		
+						<img src="images/else.png" width="400">
 						<p>
 							<div class="text1">
+								<strong>EXAMPLE</strong><br>
 								a = int(input("input a: "))<br>
 								b = int(input("input b: "))<br>
 								if a < b:
@@ -834,18 +877,21 @@
 								<br>print(a, ",", b)
 							</div>
 						</p>
-						<p>อธิบาย<br>
-						<strong>บรรทัดที่ 1-2</strong> รับข้อมูลตัวเลข 2 ค่า และแปลงค่าข้อมูลเป็นชนิด int แล้วเก็บค่าในตัวแปร
-							a และ b ตามลำดับ<br>
-						<strong>บรรทัดที่ 3</strong> ตรวจสอบค่าข้อมูลในตัวแปร a ว่ามีค่าน้อยกว่าข้อมูลในตัวแปร b หรือไม่<br>
-							ㆍ ถ้าผลการตรวจสอบเป็นจริง โปรแกรมละทำงานที่ชุดคำสั่งในบรรทัดที่ 4<br>
-							ㆍ ถ้าผลการตรวจสอบเป็นเท็จ โปรแกรมจะข้ามการทำงานของชุดคำสั่งในบรรทัดที่ 4 ไปทำงานที่คำสั่งในบรรทัดที่ 6-9<br>
-						<strong>บรรทัดที่ 4</strong> แสดงผลข้อความ ค่าในตัวแปร a น้อยกว่าค่าไนตัวแปร b<br>
-						<strong>บรรทัดที่ 6</strong>กำหนดค่าตัวแปร temp ให้เท่ากับคำในตัวแปร a<br>
-						<strong>บรรทัดที่ 7</strong> กำหนดค่าตัวแปร a ให้เท่ากับค่าในตัวแปร <br>
-						<strong>บรรทัดที่ 8</strong> กำหนดค่าตัวแปร b ให้เท่ากับคำในตัวแปร a<br>
-						<strong>บรรทัดที่ 9</strong> แสดงผลข้อความ ค่าในตัวแปร a และค่าในตัวแปร b switched<br>
-						<strong>บรรทัดที่ 10</strong> แสดงผลข้อความ ค่าในตัวแปร a เครื่องหมาย , ค่าในตัวแปร b<br></p>
+						<p>
+							<div class="text2">
+								<strong>OUTPUT</strong>
+								<br>input a: 2
+								<br>input b: 3
+								<br>2 < 3
+								<br>2 , 3
+								<br>==================================================
+								<br>input a: 3
+								<br>input b: 2
+								<br>2 and 3 switched
+								<br>2 , 3
+							</div>
+						</p>
+						
 
 						
 						<!-- IF...ELIF...ELSE -->
@@ -875,10 +921,11 @@
 							<br><strong>statement 2</strong> เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไข
 							<br><strong>boolean_ expression _2</strong>	 ที่กำหนดเป็นจริง (true)
 							<br><strong>statement n </strong>	เป็นชุดของคำสั่งที่จะทำงานเมื่อเงื่อนไขที่กำหนดให้ทั้งหมดเป็นเท็จ (false)</p>
-						<p>flowchart</p>		
-						<p<strong>Example</strong></p>
+						<p><strong>flowchart</strong></p>		
+						<img src="images/elif.png" width="400">
 						<p>
 							<div class="text1">
+								<strong>EXAMPLE</strong><br>
 								print("Menu")<br>
 								print("1.Plus")<br>
 								print("2.Minus")<br>
@@ -900,18 +947,33 @@
 								<br>print("see you again!")
 							</div>
 						</p>
-						<p>อธิบาย<br>
-						<strong>บรรทัดที่ 1-5</strong> แสดงข้อความตัวดำเนินการสำหรับการบวก ลบ คูณ และหาร ตามลำดับ<br>
-						<strong>บรรทัดที่ 6</strong> รับข้อมูลตัวเลขเพื่อเลือกตัวดำเนินการ และแปลงค่าข้อมูลเป็นชนิด int
-							แล้วเก็บค่าในตัวแปร key<br>
-						<strong>บรรทัดที่ 7-8</strong> รับข้อมูลตัวเลข 2 ค่า และแปลงค่าข้อมูลเป็นชนิด int แล้วเก็บค่าในตัวแปร
-							a และ b ตามลำดับ<br>
-						<strong>บรรทัดที่ 9-18</strong> ตรวจสอบค่าข้อมูลในตัวแปร key ว่าเท่ากับตัวเลข 1, 2, 3 หรือ 4 เพื่อทำงาน
-							ตามชุดคำสั่งที่มีเงื่อนไขค่าตัวเลขเท่ากับตัวแปร key ในกรณีที่ค่าข้อมูล
-							ในตัวแปร key ไม่ตรงกับเลขใดเลย โปรแกรมจะทำงานตามชุดคำสั่งหลัง
-							คำสั่ง else คือ แสดงข้อความว่า พบข้อผิดพลาดในการเลือกตัวดำเนินการ!<br>
-						<strong>บรรทัดที่ 19</strong> แสดงข้อความว่า แล้วเจอกันใหม่!<br>
+						<p>
+							<div class="text2">
+								<strong>OUTPUT</strong>
+								<br>Menu
+								<br>1.Plus
+								<br>2.Minus
+								<br>3.Multiplied
+								<br>4.Divide
+								<br>slected press 1, 2, 3 or 4: 3
+								<br>Enter numbers1: 5
+								<br>Enter numbers2: 3
+								<br>multiply result of 5 * 3 = 15
+								<br>see you again!
+								<br>==================================================
+								<br>Menu
+								<br>1.Plus
+								<br>2.Minus
+								<br>3.Multiplied
+								<br>4.Divide
+								<br>slected press 1, 2, 3 or 4: 5
+								<br>Enter numbers1: 3
+								<br>Enter numbers2: 5
+								<br>An error was encountered in selecting the operator!
+								<br>see you again!
+							</div>
 						</p>
+						
 					</div>	
 						<!-- Section -->
 				</section>
@@ -936,10 +998,12 @@
 							เงื่อนไขว่าเป็นจริงหรือเท็จก่อนการทำงานเสมอ
 							<br><strong>statements</strong><br>เป็นชุดคำสั่งที่ต้องการให้มีการทำซ้ำ
 							จากลักษณะการทำงานของคำสั่ง</p>
-						<p>flowchart</p>		
-						<p><strong>Example</strong></p>
+						<p><strong>flowchart</strong></p>
+						<img src="images/while.png" width="400">		
+						
 						<p> 
 							<div class="text1">
+								<strong>EXAMPLE</strong><br>
 								count = 1<br>
 								total = 0<br>
 								while count <= 20:
@@ -947,19 +1011,16 @@
 							<br>print("Sum from 1 to 20 =", total)
 							</div>
 						</p>
-						<p>อธิบาย<br>
-						<strong>บรรทัดที่ 1-2</strong> ประกาศตัวแปร count เป็นข้อมูลชนิด int มีค่าเท่ากับ 1 (ใช้เป็นตัวนับ)
-							และตัวแปร total เป็นข้อมูลชนิด int มีค่าเท่ากับ 0 (ใช้เก็บค่าผลรวม)<br>
-						<strong>บรรทัดที่ 3-5</strong>วนลูปด้วยคำสั่ง while โดยกำหนดนิพจน์เงื่อนไขให้ตรวจสอบว่าค่าตัวแปร
-							count มีค่าน้อยกว่าหรือเท่ากับ 20 หรือไม่<br>
-							ㆍ ถ้าผลการตรวจสอบเป็นจริง ให้ทำงานที่ชุดคำสั่งในบรรทัดที่ 4-5<br>
-							ㆍ ถ้าผลการตรวจสอบเป็นเท็จ ให้ทำงานที่คำสั่งในบรรทัดที่ 6<br>
-						<strong>บรรทัดที่ 4</strong> นำค่าของ count บวกด้วยค่าของ total และเก็บผลรวมในตัวแปร total<br>
-						<strong>บรรทัดที่ 5</strong> เพิ่มค่าตัวแปร count ขึ้น 1 ค่า<br>
-						<strong>บรรทัดที่ 6</strong> แสดงผค่าลรวมที่เก็บในตัวแปร total<br></p>
+						<p> 
+							<div class="text2">
+								<strong>OUTPUT</strong>
+								<br>Sum from 1 to 20 = 210
+							</div>
+						</p>
+						
 						<p><strong>FOR</strong><br>คำสั่ง for เป็นคำสั่งควบคุมการทำงานของโปรแกรมแบบทำช้ำ ที่มีการตรวจสอบเงื่อนไขที่
-							เปินนิพจน์ทางตรรกศาสตร์ ก่อนการทำงานที่ชุดคำสั่งกายในลูปทุกครั้ง ซึ่งเป็นการตรวจสอบกับ
-							ช่วงข้อมูลที่ใด้กำหนดไว้ โดยโปรแกรมจะทำงานที่ชุลดำสั่งกายในลูปเมือเงื่อนไขเป็นจริง ซึ่งจะ
+							เปินนิพจน์ทางตรรกศาสตร์ ก่อนการทำงานที่ชุดคำสั่งภายในลูปทุกครั้ง ซึ่งเป็นการตรวจสอบกับ
+							ช่วงข้อมูลที่ใด้กำหนดไว้ โดยโปรแกรมจะทำงานที่ชุลดำสั่งกายในลูปเมื่อเงื่อนไขเป็นจริง ซึ่งจะ
 							เพิ่มหรือลดค่าตัวแปรควบคุมตามคำสั่งที่กำหนดไว้</p>
 						<p>
 							<div class="text">
@@ -969,9 +1030,10 @@
 						</p>
 						<p><strong> count</strong> ตัวแปรที่ใช้ในการวนลูป
 							<br><strong>value</strong>	ช่วงข้อมูลที่เป็นตัวเลขสำหรับการทำซ้ำที่ต้องการประกอบด้วย
-								ข้อมูลตัวเลข 2 ค่าคือค่าเริ่มต้นและดำสุดท้ายของการทำซ้ำ+1
+								ข้อมูลตัวเลข 2 ค่าคือค่าเริ่มต้นและค่าสุดท้ายของการทำซ้ำ+1
 								<br><strong>statements</strong>	เป็นชุดคำสั่งที่ต้องการให้มีการทำซ้ำ</p>
-						<p>flowchart</p>		
+						<p><strong>flowchart</strong></p>
+						<img src="images/for.png" width="400">		
 						<p><strong>Example</strong></p>
 							<p>
 								<div class="text1">
@@ -980,23 +1042,21 @@
 									total = 0<br>
 									for count in range(1, (N + 1)):
 								<br><span class="tab"> score = float(input("test scores of the students" + str(count) + ":"))<br>total += score</span>
-								arg = total / N<br>
+								avg = total / N<br>
 								print("point average =", avg)<br>
 								</div>
 							</p>
-						<p>อธิบาย<br>
-						<strong>บรรทัดที่ 1</strong> รับข้อมูลค่าโดยสารต่อคนด้วยฟังก์ชัน เnput() และแปลงคำข้อมูลเป็นชนิด
-							int แล้วเก็บคำในตัวแปร R<br>
-						<strong>บรรทัดที่ 2</strong> รับข้อมูลจำนวนคนด้วยฟังก์ชัน input() และแปลงค่าข้อมูลเป็นชนิด int
-							แล้วเก็บค่าในตัวแปร N<br>
-						<strong>บรรทัดที่ 3</strong> แสดงผลข้อความ รายการแสดงราคาค่าโดยสาร<br>
-							บรรทัดที่ 4 ใช้คำสั่ง for วนลูป โดยตรวจสอบค่าตัวแปร count อยู่ในช่วง 1 ถึง N หรือไม่<br>
-							ㆍ ถ้าผลการตรวจสอบเป็นจริง ให้ทำงานตามคำสั่งบรรทัดที่ 5-6 เมื่อ<br>
-							ทำงานเสร็จให้ตรวจสอบใหมอีกครั้ง<br>
-							ㆍ ถ้าผลการตรวจสอบเป็นเท็จ ให้จบการทำงาน<br>
-						<strong>บรรทัดที่ 5</strong> นำค่าของตัวแปร count คูณกับค่ของตัวแปร R และเก็บผลในตัวแปร total<br>
-						<strong>บรรทัดที่ 6</strong> แสดงผลค่าโดยสารต่อคน จำนวนคน และค่าโดยสารรวม ที่เก็บในตัวแปร
-							R,count และ total ตามลำดับ</p>
+							<p> 
+								<div class="text2">
+									<strong>OUTPUT</strong>
+									<br>number of students: 3
+									<br>test scores of the students1:10
+									<br>test scores of the students2:11
+									<br>test scores of the students3:12
+									<br>point average = 11.0
+								</div>
+							</p>
+						
 						<p>
 							<div class="text">
 							for count in range(value, step):
@@ -1008,28 +1068,31 @@
 							<strong>step</strong> ค่าตัวเลขที่ต้องการบวกเพิ่มในรอบการทำซ้ำ<br>
 							<strong>statements</strong> เป็นชุดคำสั่งที่ต้องการให้มีการทำซ้ำ</p>
 								
-							<p><strong>Example</strong></p>
+							
 							<p>
 								<div class="text1">
+									<strong>EXAMPLE</strong>
 									print("Odd numbers from 1 to 20 consist of")<br>
 									for count in range(1, 21, +2):
-								<br><span class="tab">print(count, end="")</span>
+								<br><span class="tab">print(count, end=" ")</span>
 								</div>
 							</p>
-							<p>อธิบาย<br><strong>บรรทัดที่ 1</strong> แสดงผลข้อความ "เลขคี่ตั้งแต่ 1 ถึง 20 ประกอบด้วย"<br>
-							<strong>บรรทัดที่ 2-3</strong> ใช้คำสั่ง for วนลูป โดยตรวจสอบค่าตัวแปร count อยู่ในช่วง 1 ถึง 20 หรือไม่<br>
-								ㆍ ถ้าผลการตรวจสอบเป็นจริงให้ทำงานตามคำสั่งบรรทัดที่ 3 เมื่อทำงาน
-								เสร็จ ให้บวกเพิ่มค่าตัวแปร count ขึ้น 2 ค่า และตรวจสอบใหม่อีกครั้ง<br>
-								ㆍ ถ้าผลการตรวจสอบเป็นเท็จ ให้จบการทำงาน<br>
-							<strong>บรรทัดที่ 3</strong> แสดงผลค่าตัวแปร count แล้วตามด้วยช่องว่าง โดยใช้คำสั่ง end = "" เพื่อ
-								ให้แสดงผลอยู่ในบรรทัดเดียวกัน</p>
+							<p> 
+								<div class="text2">
+									<strong>OUTPUT</strong>
+									<br>Odd numbers from 1 to 20 consist of
+									<br>1 3 5 7 9 11 13 15 17 19
+								</div>
+							</p>
+							
 									
 							<p><strong>BREAK</strong><br>คำสั่ง break เป็นคำสั่งที่ใช้ร่วมกับคำสั่งการทำซ้ำ เพื่อหยุดการทำงานก่อนครบตามจำนวน
 								รอบหรือตามเงื่อนไขที่กำหนด โดยไม่สนใจคำสั่งอื่นๆ ที่เหลืออยู่ภายในบล็อกของการทำซ้ำ</p>
-							<p><strong>Example</strong></p>
+							
 							<p>
 								<div class="text1">
-									while True:
+									<strong>EXAMPLE</strong>
+									<br>while True:
 								<br><span class="tab">ch = input("character input: ")
 									<br>if 'a' <= ch <= 'z':
 									<br><span class="tab">print(ch, "in english alphabet")</span>
@@ -1040,18 +1103,24 @@
 									<br>break</span>
 								</div>
 							</p>
-							<p>อธิบาย<br><strong>บรรทัดที่ 1</strong> วนลูปด้วยคำสั่ง while True เพื่อให้โปรแกรมทำงานตามชุดคำสั่งภายในลูป
-								บรรทัดที่ 2-9<br>
-							<strong>บรรทัดที่ 2</strong> รับข้อมูลตัวอักขระด้วยฟังก์ชัน input() แล้วเก็บค่าในตัวแปร ch<br>
-							<strong>บรรทัดที่ 3</strong> ถ้าch มีค่าเท่ากับตัวอักษรในภาษาอังกฤษทั้งตัวพิมพ์เล็กและตัวพิมพ์ใหญ่
-								โปรแกรมก็จะแสดงผลข้อความ ch เป็นตัวอักษรในภาษาอังกฤษ และ
-								รับข้อมูล ch ใหม่ แต่ถ้าไม่ไช่ โปรแกรมก็จะแสดงผลข้อความ ch ไม่ใช่
-								ตัวอักษรในภาษาอังกฤษ แล้ว break การทำงาน และออกจากคำสั่งลูป</p>
+							<p> 
+								<div class="text2">
+									<strong>OUTPUT</strong>
+									<br>character input: l
+									<br>l in english alphabet
+									<br>character input: ;
+									<br>; not english letters
+									
+								</div>
+							</p>
+							
+							
 							<p><strong>CONTINUE</strong><br>คำสั่ง continue เป็นคำสั่งที่ทำงานต่างจากคำสั่ง break โดยคำสั่ง continue จะเป็นคำสั่งที่
 								บังคับให้โปรแกรมข้ามไปทำงานในรอบต่อไปทันที โดยไม่สนใจคำสั่งที่เหลืออยู่ในลูป</p>
-							<p><strong>Example</strong></p>
+							
 							<p>
 								<div class="text1">
+									<strong>EXAMPLE</strong><br>
 									count = 1<br>
 									while count <= 5:
 								<br><span class="tab">score = float(input("test scores of the students" + str(count) + ":"))<br>
@@ -1062,25 +1131,22 @@
 									count += 1
 								</div>
 							</p>
-							<p>อธิบาย<br><strong>บรรทัดที่ 1</strong> กำหนดตัวแปร count มีคำเท่ากับ 1 ใช้เป็นตัวแปรควบคุมจำนวนครั้งของ
-								การทำซ้ำ<br>
-							<strong>บรรทัดที่ 2-8</strong> เป็นคำสั่งทำซ้ำด้วยคำสั่ง while โดยทำซ้ำจนกว่าค่าตัวแปร count จะมีค่า
-								มากกว่า 5 จึงจะออกจากลูปคำสั่ง<br>
-							<strong>บรรทัดที่ 4</strong> เป็นการตรวจสอบเงื่อนไขของคำสั่ง ถ้าค่าของตัวแปร score ที่รับเข้ามา มี
-								ค่าน้อยกว่า 0 หรือมากกว่า 100 จริง ให้ทำงานที่คำสั่งในบรรทัดที่ 5-6<br>
-							<strong>บรรทัดที่ 5-6</strong> ในกรณีที่นิพจน์เงื่อนไขคำสั่งในบรรทัดที่ 4 เป็นจริง โปรแกรมจะข้ามคำสั่ง
-								ที่เหลือทั้งหมดไปทำงานในรอบถัดไป ด้วยคำสั่ง continue ทันทึ โดยไม่
-								สนใจว่าคำสั่งที่เหลือเป็นคำสั่งอะไร
-								ในกรณีที่นิพจน์เงื่อนขคำสั่งในบรรทัดที่ 4 เป็นเท็จ โปรแกรมจะข้ามไป
-								ทำงานตามคำสั่งในบรรทัดที่ 7-8<br>
-							<strong>บรรทัดที่ 7-8</strong> แสดงข้อความว่า ข้อมูลคะแนนถูกต้อง และบวกค่า count เพิ่มขึ้น 1 ค่า
-								แล้วกลับไปตรวจสอบเงื่อนไขในบรรทัดที่ 2 จนกว่าค่าตัวแปร count จะมี
-								ค่ามากกว่า 5 ก็จะจบการทำงาน</p>
+							<p> 
+								<div class="text2">
+									<strong>OUTPUT</strong>
+									<br>test scores of the students1:100
+									<br>The score information is correct.
+									<br>test scores of the students1:101
+									<br>Incorrect score information
+								</div>
+							</p>
+							
 							<p><strong>PASS</strong><br>คำสั่ง pass เป็นคำสั่งที่ใช้ในกรณีที่ไม่ต้องการให้มีการดำเนินการใดๆ ของชุดคำสั่ง และผ่านไป
 								ทำงานในชุดคำสั่งที่อยู่บรรทัตถัดไป</p>
-							<p><strong>Example</strong></p>
+							
 								<p>
 									<div class="text1">
+										<strong>EXAMPLE</strong><br>
 										password = ["12345", "1111"]<br>
 										pw = input("password is: ")<br>
 										for data in password:
@@ -1091,15 +1157,18 @@
 										<br>print("see you again")
 									</div>
 								</p>
-								<p>อธิบาย<br>
-								<strong> บรรทัดที่ 1</strong>  กำหนดตัวแปร password เป็นข้อมูล list ที่มีรหัสผ่าน 2 ค่าคือ "12345"
-								และ "1111"<br>
-							<strong>บรรทัดที่ 2</strong> รับข้อมูลรหัสผ่านด้วยฟังก์ชัน input() และเก็บค่าในตัวแปร pw<br>
-							<strong>บรรทัดที่ 3-7</strong> ใช้คำสั่ง for วนลูปเพื่อนำข้อมูล password แต่ละตัวมาเก็บไว้ในตัวแปร data
-								เพื่อนำมาเปรียบเทียบกับตัวแปร pw ถ้าข้อมูลไม่ตรงกัน โปรแกรมก็จะผ่าน
-								การทำงานด้วยคำสั่ง pass ในบรรทัดที่ 5 ถ้าตรงกันก็จะแสดงข้อความว่า
-								พบข้อมูลรหัสผ่านนี้ ตามคำสั่งในบรรทัดที่ 7<br>
-							<strong>บรรทัดที่ 8</strong> แสดงข้อความว่า แล้วเจอกันใหม่</p>
+								<p> 
+									<div class="text2">
+										<strong>OUTPUT</strong>
+										<br>password is: 1111
+										<br>Found this password.
+										<br>see you again
+										<br>==================================================
+										<br>password is: 1234
+										<br>see you again
+									</div>
+								</p>
+								
 					</div>
 				</section>
 				<section>
@@ -1161,8 +1230,6 @@
 								<strong>idx1</strong> เป็นลำดับที่เริ่มต้นของตัวอักขระที่ต้องการใน str1<br>
 								<strong>idx2</strong> เป็นลำดับที่สุดท้าย + 1 ของตัวอักขระที่ต้องการใน str1<br>
 								<strong>step</strong> เป็นจำนวนตำแหน่งที่ต้องการข้าม + 1 (มีหรือไม่มีก็ได้)</p>
-								<p>Example</p>
-							
 								<style>
 									table,td, th {
 										border: 1px solid black;
@@ -1179,7 +1246,8 @@
 								</style>
 								</head>
 								<body>
-									<p>กำหนดให้ str1 ="python programming"<br><strong>Index</strong></p>
+									<p><strong>EXAMPLE</strong><br>
+									กำหนดให้ str1 ="python programming"<br><strong>Index</strong></p>
 										
 									<table>
 										<tr>
@@ -1247,14 +1315,14 @@
 											<tr>
 												<td>str1.count(x"|,b,e)</td>
 												<td>ให้ค่าเป็นจำนวนตัวอักขระ "x" ที่พบใน str1 โดยที่
-													ㆍ b คือ ลำดับที่เริ่มต้นที่ใช้ค้นหา,
-													ㆍ e คือ ลำดับที่สุดท้าย + 1 ที่ใช้ค้นหา
+													<br>ㆍ b คือ ลำดับที่เริ่มต้นที่ใช้ค้นหา,
+													<br>ㆍ e คือ ลำดับที่สุดท้าย + 1 ที่ใช้ค้นหา
 													**b เละ e จะมีหรือไม่มีก็ได้**</td>
 												
 											</tr>
 											<tr>
 												<td>str1.capitalize()</td>
-												<td>ให้ค่า str1 ที่ตัวอักขระตัวแรกเป็นตัวหิมพ์ใหญ่</td>
+												<td>ให้ค่า str1 ที่ตัวอักขระตัวแรกเป็นตัวพิมพ์ใหญ่</td>
 											</tr>
 											<tr>
 												<td>len(str1)</td>
@@ -1270,7 +1338,7 @@
 											</tr>
 											<tr>
 												<td>str1.swapcase()</td>
-												<td>ให้ค่า str1 ที่เปลียนตัวอักขระในข้อความจากตัวพิมพ์ใหญ่เป็นตัวพิมพ์เล็กและ
+												<td>ให้ค่า str1 ที่เปลี่ยนตัวอักขระในข้อความจากตัวพิมพ์ใหญ่เป็นตัวพิมพ์เล็กและ
 													เปลี่ยนจากตัวพิมพ์เล็กเป็นตัวพิมพ์ใหญ่</td>
 											</tr>
 											<tr>
@@ -1280,8 +1348,8 @@
 											<tr>
 												<td>str1.find("x" [, b] [, e)]</td>
 												<td>ให้ค่าเป็นลำดับที่ของตัวอักขระ "x" ที่พบใน str1 โดยที่
-													ㆍb คือ ลำดับที่เริ่มต้นที่ใช้ค้นหา
-													ㆍe คือ ลำดับที่สุดท้าย + 1 ที่ใช้ค้นหา
+													<br>ㆍb คือ ลำดับที่เริ่มต้นที่ใช้ค้นหา
+													<br>ㆍe คือ ลำดับที่สุดท้าย + 1 ที่ใช้ค้นหา
 													(หากค้นหาไม่พบ จะให้ผลเป็นค่าลบ)</td>
 											</tr>
 											<tr>
@@ -1295,7 +1363,7 @@
 											<tr>
 												<td>str1.ljust(n |,"x")</td>
 												<td>ให้ค่า str1 ที่จัดรูบแบบข้อความชิดข้ายเท่ากับจำนวน n ตำแหน่ง และเติมด้วย
-													อักขระ 'x" ทางด้านขวา ในกรณีที่จำนรนหลักของข้อความยังไม่ครบ n หลัก</td>
+													อักขระ "x" ทางด้านขวา ในกรณีที่จำนรนหลักของข้อความยังไม่ครบ n หลัก</td>
 											</tr>
 											<tr>
 												<td>str1.rjust(n |,"x")</td>
@@ -1309,16 +1377,36 @@
 													ไม่ใช่จะให้ค่าเป็นเท็จ</td>
 											</tr>
 										</table>
-										<p>Example</p>
-										<p><strong>บรรทัดที่ 1</strong> กำหนดค่าข้อมูลรหัสผ่านให้กับตัวแปร loginList<br>
-										<strong>บรรทัดที่ 2</strong> เข้าถึงข้อมูลรหัสผ่านในตำแหน่งที่ 1, 3, 5 และ 7 แล้วเก็บคำในตัวแปร
-											checkList เพื่อใช้ในการตรวจสอบ<br>
-										<strong>บรรทัดที่ 3</strong> กำหนดค่า False ให้กับตัวแปร check<br>
-										<strong>บรรทัดที่ 4-5</strong> วนลูป while ในขณะที่ค่า check เท่ากับ False เพื่อรับข้อมูลรหัสผ่านให้กับ
-											ตัวแปร password<br>
-										<strong>บรรทัดที่ 6-8</strong> ถ้ารหัสผ่านในตัวแปร password มีค่าเท่ากับรหัสผ่านในตัวแปร checkList
-											ให้แสดงข้อความ เข้าสู่ระบบสำเรีจ และออกจากการทำงานของสูป while ด้วยคำสั่ง break<br>
-										<strong>บรรทัดที่ 9-10</strong> ถ้ารหัสผ่านในตัวแปร password มีค่าไม่เท่ากับรหัสผ่านในตัวแปร checkList ให้แสดงข้อความ ข้อมูลไม่ถูกต้อง ลองใหม่อีกครั้ง แล้ววนลูปกลับไปรับข้อมูลรหัสผ่านใหม่</p>
+										
+										<p>
+											<div class="text1">
+												<strong>EXAMPLE</strong>
+												<br>loginList = "87654321"
+												<br>checkList = loginList[0:len(loginList):2]
+												<br>check = False
+												<br>while not check:
+												<br><span class="tab">password = input("enter your password: ")
+												<br>if password == checkList:</span>
+												<br><span class="tab"><span class="tab">print("Login successfully")
+												<br>break</span></span>
+												<br><span class="tab">else:</span>
+												<br><span class="tab"><span class="tab">print("Incorrect password. Please try again.")
+												</span></span>
+											</div>
+										</p>
+									</p>
+									<p> 
+										<div class="text2">
+											<strong>OUTPUT</strong>
+											<br>enter your password: 87654321
+											<br>Incorrect password. Please try again.
+											
+											<br>==================================================
+											<br>enter your password: 8642
+											<br>Login successfully
+										</div>
+									</p>
+										
 						</div>
 				</section>	
 				<section>
@@ -1337,20 +1425,30 @@
 						<p><div class="text">functionName()</div></p>
 						<p><strong>functionName</strong> เป็นชื่อฟังก์ชัน<br>
 						<strong>statements</strong> เป็นชุดคำสั่งที่ทำงานในฟังก์ชัน</p>
-						<p>Example</p>
-						<p><strong>บรรทัดที่ 1</strong> สร้างฟังก์ชันชื่อ calwage()<br>
-						<strong>บรรทัดที่ 2</strong> กำหนดตัวแปร total เป็นตัวแปร global เพื่อเก็บผลการคำนวณค่าแรงรวม
-							ซึ่งตัวแปร total นี้สามารถเรียกใช้ได้ ณ ตำแหน่งใดๆของโปรแกรม<br>
-						<strong>บรรทัดที่ 3</strong> คำนวณ total จากจำนวนชั่วโมงทำงาน 40 ชั่วโมง คูณด้วยอัตราค่าแรง r
-							เท่ากับ 100 บาทต่อซั่วโมง และบวกด้วยจำนวนชั่วโมงทำงานที่เกิน 40
-							ชั่วโมง จาก 6 - 40 คูณด้วย 1.5 เท่าของอัตราค่าแรง r<br>
-						<strong>บรรทัดที่ 5-6</strong> เริ่มการทำงานของโปรแกรมหลัก โดยกำหนดจำนวนชั่วโมงทำงาน h เท่ากับ
-							50 ชั่วโมง และอัตราค่าแรง r เท่ากับ 100 บาทต่อชั่วโมง โดย h และ r ใน
-							โปรแกรมนี้จะเป็นตัวแปร global ที่สามารถถูกเรียกใช้ได้ ณ ตำแหน่งใดๆ
-							ของโปรแกรม<br>
-						<strong>บรรทัดที่ 7</strong> เรียกใช้ฟังก์ชัน calwage() ซึ่งเป็นแบบไม่รับพารามิเตอร์และไม่คืนค่า<br>
-						<strong>บรรทัดที่ 8-10</strong> แสดงผลจำนวนชั่วโมงทำงาน h, อัตราค่าแรง r และค่าแรงรวม total โดย
-							จัดรูปแบบการแสดงผลด้วยฟังก็ชัน format()</p>
+						
+						<p>
+							<div class="text1">
+								<strong>EXAMPLE</strong>
+								<br>def calwage():
+								<br><span class="tab"> global total
+								<br>total=(40*r)+(h-40)*(1.5* r)</span>
+								<br>h = 50
+								<br>r = 100
+								<br>calwage()
+								<br>print("the total working hours = {:,d} hours".format(h))
+								<br>print("labor rate = {:,.2f} THB per hour".format(r))
+								<br>print("the total amount of wages = {:,.2f} THB".format(total))
+
+							</div>
+						</p>
+						<p> 
+							<div class="text2">
+								<strong>OUTPUT</strong>
+								<br>the total working hours = 50 hours
+								<br>labor rate = 100.00 THB per hour
+								<br>the total amount of wages = 5,500.00 THB
+							</div>
+						</p>
 						<p>
 							<div class="text">
 							def functionName(Parameter):
@@ -1363,18 +1461,30 @@
 							<strong>parameter</strong> เป็นค่าข้อมูลที่รับมาจากฟังก์ชันที่เรียกใช้<br>
 							<strong>statements</strong> เป็นชุดคำสั่งที่ทำงานในฟังก์ชัน<br>
 							<strong>argument</strong> เป็นค่าข้อมูลที่ส่งให้กับฟังก์ชันที่ถูกเรียกใช้</p>
-						<p>Example</p>
-						<p>อธิบาย</p>
-						<p><strong>บรรทัดที่ 1</strong> สร้างฟังก์ชันชื่อ calwage() ให้มีพารามิเตอร์รับข้อมูล hr และ rate<br>
-						<strong>บรรทัดที่ 2</strong> กำหนดตัวแปร total เป็นตัวแปร gobal เพื่อเก็บผลการคำนวณค่าแรง ซึ่ง
-							ตัวแปร total นี้สามารถเรียกใช้ได้ ณ ตำแหน่งใดๆ ของโปรแกรม<br>
-						<strong>บรรทัดที่ 3</strong> คำนวณ total จากจำนวนซั่วโมงทำงาน 40 ชั่วโมง คูณด้วยอัตราค่าแรง
-							เท่ากับ 100 บาทต่อชั่วโมง และบวกด้วยจำนวนชั่วโมงทำงานที่เกิน 40
-							ชั่วโมง จาก h - 40 คูณด้วย 1.5 เท่าของอัตราคำแรง r<br>
-						<strong>บรรทัดที่ 5-6</strong> เริ่มการทำงานของโปรแกรมหลัก โดยกำหนดจำนวนชั่วโมงทำงาน h เท่ากับ
-							50 ชั่วโมง และอัตราค่าแรง r เท่ากับ 100 บาทต่อชั่วโมง<br>
-						<strong>บรรทัดที่ 7</strong> เรียกใช้ฟังก์ชัน calwage() ซึ่งเป็นแบบไม่คืนค่า โดยส่งค่าอาร์กิวเมนต์ h และ r<br>
-						<strong>บรรทัดที่ 8-10</strong> แสดงผลจำนวนชั่วโมงทำงาน h, อัตราค่าแรง r และคำแรงรวม total จัดรูปแบบการแสดงผลด้วยฟังก์ชัน format()</p>	
+							
+							<p>
+								<div class="text1">
+									<strong>EXAMPLE</strong>
+									<br>def calwage(hr,rate):
+									<br><span class="tab"> global total
+									<br>total=(40*rate)+(hr-40)*(1.5* rate)</span>
+									<br>h = 50
+									<br>r = 100
+									<br>calwage(h, r)
+									<br>print("the total working hours = {:,d} hours".format(h))
+									<br>print("labor rate = {:,.2f} THB per hour".format(r))
+									<br>print("the total amount of wages = {:,.2f} THB".format(total))
+	
+								</div>
+							</p>
+							<p> 
+								<div class="text2">
+									<strong>OUTPUT</strong>
+									<br>the total working hours = 50 hours
+									<br>labor rate = 100.00 THB per hour
+									<br>the total amount of wages = 5,500.00 THB
+								</div>
+							</p>
 						<p>
 							<div class="text">
 							def functionName():
@@ -1382,28 +1492,39 @@
 							return varValue</span>
 							</div>
 						</p>
-						<p>และมีรูปแบบการเรียกใช้ฟังก็ชันดังนี้</p>
+						<p>และมีรูปแบบการเรียกใช้ฟังก์ชันดังนี้</p>
 						<p><div class="text">result = functionName()</div></p>
 						<p><strong>functionName</strong> เป็นชื่อฟังก์ชัน<br>
 						<strong>statements</strong> เป็นชุดคำสั่งที่ทำงานในฟังก์ชัน<br>
 						<strong>return</strong> เป็นคำสั่งคืนค่าผลการทำงานกลับไปยังฟังก์ชันที่เรียกใช้<br>
 						<strong>varValue</strong> เป็นค่าข้อมูลที่ต้องการส่งกลับไปยังฟังก์ชันที่เรียกใช้<br>
 						<strong>result</strong> เป็นตัวแปรที่เก็บค่าข้อมูลผลการทำงานของฟังก์ชัน</p>
-						<p>Example</p>
-						<p>อธิบาย</p>
-						<p><strong>บรรทัดที่ 1</strong> สร้างฟังก์ชันชื่อ calwage()<br>
-						<strong>บรรทัดที่ 2</strong> คำนวณ total จากจำนวนชั่วโมงทำงาน 40 ชั่วโมง คูณด้วยอัตราค่าแรง
-							เท่ากับ 100 บาทต่อชั่วโมง และบวกด้วยจำนวนชั่วโมงทำงานที่เกิน 40
-							ชั่วโมง จาก h - 40 คูณด้วย 1.5 เท่าของอัตราค่าแรง r บรรทัดที่ 3<br>
-						<strong>บรรทัดที่ 3</strong> คืนค่าค่าแรงรวม total<br>
-						<strong>บรรทัดที่ 5-6</strong> เริ่มการทำงานของโปรแกรมหลัก โดยกำหนดจำนวนชั่วโมงทำงาน h เท่ากับ
-							50 ชั่วโมง และอัตราค่าแรง r เท่ากับ 100 บาทต่อชั่วโมง โดย h และ r ใน
-							โปรแกรมนี้จะเป็นตัวแปร global ที่สามารถเรียกใช้ได้ ณ ตำแหน่งใดๆ ของ
-							โปรแกรม<br>
-						<strong>บรรทัดที่ 7</strong> เรียกใช้ฟังก์ชัน calwage()  ซึ่งเป็นแบบไม่รับพารามิเตอร์แต่มีการคืนค่า
-							ค่าแรงรวมให้ตัวแปร result<br>
-						<strong>บรรทัดที่ 8-10</strong>  แสดงผลจำนวนชั่วโมงทำงาน h, อัตราค่แรง r และค่าแรงรวม result โดย
-							จัดรูปแบบการแสดงผลด้วยฟังก์ชัน format()</p>
+						
+							<p>
+								<div class="text1">
+									<strong>EXAMPLE</strong>
+									<br>def calwage(hr,rate):
+									<br><span class="tab"> global total
+									<br>total=(40*rate)+(hr-40)*(1.5* rate)
+									<br>return total</span>
+									<br>h = 50
+									<br>r = 100
+									<br>result = calwage()
+									<br>print("the total working hours = {:,d} hours".format(h))
+									<br>print("labor rate = {:,.2f} THB per hour".format(r))
+									<br>print("the total amount of wages = {:,.2f} THB".format(result))
+	
+								</div>
+							</p>
+							<p> 
+								<div class="text2">
+									<strong>OUTPUT</strong>
+									<br>the total working hours = 50 hours
+									<br>labor rate = 100.00 THB per hour
+									<br>the total amount of wages = 5,500.00 THB
+								</div>
+							</p>
+						
 						<p>
 							<div class="text">
 							det tunctionName(parameter):
@@ -1420,18 +1541,33 @@
 						<strong>varValue</strong> เป็นค่าข้อมูลที่ต้องการส่งกลับไปยังฟังก์ชันที่เรียกใช้<br>
 						<strong>argument</strong> เป็นค่าข้อมูลที่ส่งให้กับฟังก์ชันที่ถูกเรียกใช้<br>
 						<strong>result</strong> เป็นตัวแปรที่เก็บค่าข้อมูลผลการทำงานของฟังก์ชัน</p>
-						<p>Example</p>
-						<p>อธิบาย<br>
-						<strong>บรรทัดที่ 1</strong> สร้างฟังก์ชันชื่อ calwage() ให้มีพารามิเตอร์รับข้อมูล hr และ rate<br>
-						<strong>บรรทัดที่ 2</strong> คำนวณ total จากจำนวนชั่วโมงทำงาน 40 ชั่วโมง คูณด้วยอัตราค่าแรง r
-							เท่ากับ 100 บาทต่อชั่วโมง และบวกด้วยจำนวนชั่วโมงทำงานที่เกิน 40 ชั่วโมง h - 40 คูณด้วย 1.5 เท่าของอัตราค่าแรง r<br>
-						<strong>บรรทัดที่ 3</strong> คืนค่าค่าแรงรวม total<br>
-						<strong>บรรทัดที่ 5-6</strong> เริ่มการทำงานของโปรแกรมหลัก โดยกำหนดจำนวนชั่วโมงทำงาน h เท่ากับ
-							50 ชั่วโมง และอัตราค่าแรง r เท่ากับ 100 บาทต่อชั่วโมง<br>
-						<strong>บรรทัดที่ 7</strong> เรียกใช้ฟังก์ชัน calwage() โดยส่งค่าอาร์กิวเมนต์ h และ r และคืนค่า
-							ค่าแรงรวมให้ตัวแปร result<br>
-						<strong>บรรทัดที่ 8- 10</strong> แสดงผลจำนวนชั่วโมงทำงาน h, อัตราค่าแรง r และค่าแรงรวม total โดย
-							จัดรูปแบบการแสดงผลด้วยฟังก์ชัน format()</p>
+						
+						
+							<p>
+								<div class="text1">
+									<strong>EXAMPLE</strong>
+									<br>def calwage(hr,rate):
+									<br><span class="tab"> global total
+									<br>total=(40*rate)+(hr-40)*(1.5* rate)
+									<br>return total</span>
+									<br>h = 50
+									<br>r = 100
+									<br>result = calwage(h, r)
+									<br>print("the total working hours = {:,d} hours".format(h))
+									<br>print("labor rate = {:,.2f} THB per hour".format(r))
+									<br>print("the total amount of wages = {:,.2f} THB".format(result))
+	
+								</div>
+							</p>
+							<p> 
+								<div class="text2">
+									<strong>OUTPUT</strong>
+									<br>the total working hours = 50 hours
+									<br>labor rate = 100.00 THB per hour
+									<br>the total amount of wages = 5,500.00 THB
+								</div>
+							</p>
+						
 					</div>
 				</section>
 				<section>
@@ -1484,15 +1620,74 @@
 								
 						</table>
 							<p><strong>การอ่านข้อมูลจาก Text file</strong></p>
-							<p>Example</p>
-							<p>อธิบาย<br>ในตัวอย่าง เป็นโปรแกรมในการอ่านข้อมูลจาก Text file ในตอนแรกของโปรแกรม เราได้เปิดไฟล์ด้วยฟังก์ชัน open() โดยอาร์กิวเมนต์แรกเป็นชื่อของไฟล์คือ myfile.txt และเราต้องการเปิดไฟล์เพื่ออ่านจึงใส่โหมดของการเปิดเป็น r หลังจากการเปิดสำเร็จฟังก์ชันส่ง File object กลับในตัวแปร f อย่างไรก็ตาม ถ้าหากการเปิดไฟล์ล้มเหลวจะทำให้เกิดข้อผิดพลาด OSError ขึ้น</p>
+							
+							<p>
+								<div class="text1">
+									<strong>EXAMPLE</strong>
+									<br>f = open('myfile.txt', 'r')
+									<br>s = f.read()
+									<br>f.close()
+									<br>print(s)
+								</div>
+							</p>
+							<p> 
+								<div class="text2">
+									<strong>OUTPUT</strong>
+									<br>the total working hours = 50 hours
+									<br>labor rate = 100.00 THB per hour
+									<br>the total amount of wages = 5,500.00 THB
+								</div>
+							</p>
+							<p>ในตัวอย่าง เป็นโปรแกรมในการอ่านข้อมูลจาก Text file ในตอนแรกของโปรแกรม เราได้เปิดไฟล์ด้วยฟังก์ชัน open() โดยอาร์กิวเมนต์แรกเป็นชื่อของไฟล์คือ myfile.txt และเราต้องการเปิดไฟล์เพื่ออ่านจึงใส่โหมดของการเปิดเป็น r หลังจากการเปิดสำเร็จฟังก์ชันส่ง File object กลับในตัวแปร f อย่างไรก็ตาม ถ้าหากการเปิดไฟล์ล้มเหลวจะทำให้เกิดข้อผิดพลาด OSError ขึ้น</p>
 							<p><strong>การอ่านข้อมูลทีละบรรทัดด้วยเมธอด readline()</strong></p>
 							<p>โปรแกรมในการอ่านข้อมูลจาก Text file ทีละบรรทัด โดยการใช้คำสั่ง While loop เพื่อวนอ่านข้อมูลจากไฟล์ นี่เป็นโค้ดการทำงานของโปรแกรม</p>
-							<p>Example</p>
+							
+							<p>
+								<div class="text1">
+									<strong>EXAMPLE</strong>
+									<br>f = open('myfile.txt', 'r')
+									<br>while True:
+									<br><span class="tab">s = f.readline()</span> 
+									<br><span class="tab">if s == '':</span>
+									<br><span class="tab"><span class="tab">break</span></span>
+									<br><span class="tab">d = s.rstrip().split('=');</span>
+									<br><span class="tab">print(d[0] + ': ' + d[1])</span>
+									f.close()
+								</div>
+							</p>
+							<p> 
+								<div class="text2">
+									<strong>OUTPUT</strong>
+									<br>the total working hours = 50 hours
+									<br>labor rate = 100.00 THB per hour
+									<br>the total amount of wages = 5,500.00 THB
+								</div>
+							</p>
 							<p>อธิบาย<br>ในตัวอย่าง เป็นโปรแกรมในการอ่านข้อมูลจากไฟล์ทีละบรรทัดด้วยเมธอด readline() ในตอนแรกเราทำการเปิดไฟล์ myconfig.txt ด้วยโหมดสำหรับการอ่านข้อมูลเช่นเดิม</p>
 							<p><strong>การเขียนข้อมูลลงบน Text file</strong></p>
 							<p>ในการทำงานกับไฟล์ นอกจากการอ่านข้อมูลแล้วยังมีการเขียนข้อมูลลงไปในไฟล์ ในการเขียนโปรแกรมนั้นอาจจะมีข้อมูลบางอย่างที่เราจะต้องเก็บไว้ในรูปแบบของไฟล์ เพื่อนำไปใช้งานในอนาคตหรือใช้กับโปรแกรมอื่นๆ ต่อไปเป็นตัวอย่างของการเขียนข้อมูลลงใน Text file ในภาษา Python โดยโปรแกรมของเราจะทำการบันทึกข้อมูลของพนักงานโดยมีชื่อและภาษาโปรแกรมที่เขียนโดยรับค่าเหล่านี้มาจากคีย์บอร์ด และบันทึกข้อมูลเหล่านั้นไว้ในไฟล์ นี่เป็นโค้ดการทำงานของโปรแกรม</p>
-							<p>Example</p>
+							
+							<p>
+								<div class="text1">
+									<strong>EXAMPLE</strong>
+									<br>f = open('employees.txt', 'w')
+									<br>for i in range(1, 6):
+									<br><span class="tab"> print('Employee', i)
+									<br>name = input('Name: ')
+									<br>language = input('Language: ')
+									<br>f.write(name + ', ' + language + '\n')</span> 
+									<br>print('Writing to file completed')
+									f.close()
+								</div>
+							</p>
+							<p> 
+								<div class="text2">
+									<strong>OUTPUT</strong>
+									<br>the total working hours = 50 hours
+									<br>labor rate = 100.00 THB per hour
+									<br>the total amount of wages = 5,500.00 THB
+								</div>
+							</p>
 							<p>อธิบาย<br>ในตัวอย่าง เป็นโปรแกรมเขียนข้อมูลลงบนไฟล์โดยโปรแกรมจะรับข้อมูลจากคีย์บอร์ด ในตอนแรกเราได้ทำการเปิดไฟล์ employees.txt เพื่อเขียนข้อมูลใหม่โดยการใช้โหมด w ในโหมดนี้ถ้าหากไม่มีไฟล์ดังกล่าวอยู่โปรแกรมจะสร้างไฟล์ขึ้นมาใหม่ หรือหากมีอยู่จะทำการลบไฟล์เดิมและสร้างใหม่</p>
 							<p><strong>ประเภทของ Exception</strong></p>
 							<style>
@@ -1547,7 +1742,7 @@
 									</tr>
 									<tr>
 										<td>ZeroDivisionError</td>
-										<td>ความผิดพลาดที่เกิดจากการหารด้วยศูนย์/td>
+										<td>ความผิดพลาดที่เกิดจากการหารด้วยศูนย์
 										
 									</tr>
 								</table>
@@ -1565,11 +1760,29 @@
 									<br><strong>e</strong> เป็นตัวแปรที่เก็บค่าประเภทของ Exception 
 									<br><strong>statements_2</strong> เป็นชุดคำสั่งที่กำหนดให้ทำงานเมื่อเกิดข้อผิดพลาด
 									ตรงตาม Exception</p>
-								<p>Example</p>
-								<p>บรรทัดที่ 1-6 ช้คำสั่ง try....except ครอบชุดคำสั่งที่ต้องการตรวจจับข้อผิดพลาด
-									ValueError<br>
-									บรรทัดที่ 7 -8 ในกรณีที่พบข้อผิดพลาด จะแสดงข้อความ ไม่สามารถแปลงชนิตข้อมูลได้
-									และแสดงผลข้อมูล e ซึ่งก็คือ ข้อผิดพลาดที่พบ</p>
+									
+									<p>
+										<div class="text1">
+											<strong>EXAMPLE</strong>
+											<br>try:
+										<br><span class="tab">data1 = float(input("numeric data 1: "))
+										<br>data2 = float(input("numeric data 2: "))
+										<br>print("information is", data1, data2, end=" => ")
+										<br>print("The data type was converted successfully.")</span>
+										<br>except ValueError as e:
+										<br><span class="tab">print("The data type cannot be converted.")
+										<br>print("Value Error: ", e)
+										</span>
+										</div>
+									</p>
+									<p> 
+										<div class="text2">
+											<strong>OUTPUT</strong>
+											<br>the total working hours = 50 hours
+											<br>labor rate = 100.00 THB per hour
+											<br>the total amount of wages = 5,500.00 THB
+										</div>
+									</p>
 
 					</div>
 				</section>
@@ -1581,7 +1794,7 @@
 						<div class="content">
 						<p>List และ Tuple เป็นชนิดข้อมูลที่ประกอบด้วยรายการข้อมูลชนิดใดก็ได้เรียงต่อๆ กัน โดย
 							ข้อมูล List จะอยู่ภายในเครื่องหมายวงเล็บก้ามปู [...] ส่วนข้อมูล Tuple จะอยู่ภายในเครื่องหมาย
-							วงเล็บ (...) และคั่นด้วยเครื่องหมายคอมม่า (.) เหมือนกัน
+							วงเล็บ (...) และคั่นด้วยเครื่องหมายคอมม่า (,) เหมือนกัน
 							ความแตกต่างระหว่าง List กับ Tuple คือ สามารถเพิ่ม เปลี่ยนแปลง หรือลบข้อมูลใน
 							List ได้ แต่ไม่สามารถเพิ่ม เปลี่ยนแปลง หรือลบข้อมูลใน Tuple</p>
 						<p><strong>การเข้าถึงข้อมูลชนิด List และ Tuple</strong></p>
@@ -1630,13 +1843,13 @@
 								<tr>
 									<td>list1[0:2] </td>
 									<td>ข้อมูลลำดับที่ 0 ถึง 1 รายการที่ 1 ถึง 2</td>
-									<td>['Tiger, '20]</td>
+									<td>['Tiger', '20']</td>
 								</tr>
 								<tr>
 									<td>list1[1:6:4]</td>
 									<td>ข้อมูลลำดับที่ 1 ถึง 5 และข้าม 3 ตำแหน่งคือ
 										รายการที่ 2 ถึง 6 และข้ามไปทุก 3 ตำแหน่ง</td>
-									<td>[20', '081-8188216]</td>
+									<td>['20', '081-8188216]</td>
 								</tr>
 							</table>
 						</body>
@@ -1755,43 +1968,101 @@
 								</tr>
 							</table>
 						</body>	
-						<p>Example</p>
-						<p>อธิบาย<br>
-						<strong>บรรทัดที่ 1</strong> กำหนดค่า 1 ให้กับตัวแปร key เพื่อใช้ในการตรวจสอบการเลือกตัวเลขของ
-							เมนู<br>
-						<strong>บรรทัดที่ 2</strong> กำหนดค่าข้อมูลให้กับตัวแปร passList ซึ่งเป็นตัวแปร List เป็นลิสต์ข้อมูล
-							เลขที่ของคนที่สอบผ่าน<br>
-						<strong>บรรทัดที่ 3-7</strong> วนลูป while ในขณะที่ค่า key เท่ากับ 1 หรือ 2 เพื่อรับข้อมูลตัวเลขของเมนู
-							จากรายการเมนูในบรรทัดที่ 4-6<br>
-						<strong>บรรทัดที่ 8-9</strong> ถ้า key เท่ากับ 1 ให้แสดงข้อมูลทั้งหมดในตัวแปร passList<br>
-						<strong>บรรทัดที่ 10- 16</strong> ถ้า key เท่ากับ 2 ให้รับข้อมูลเลขที่ผู้สมัคร เก็บค่าในตัวแปร studentlD
-							และนำไปตรวจสอบการเป็นสมาชิกในบรรทัดที่ 13 ถ้าไม่พบข้อมูล
-							studentID ใน passList ให้แสดงข้อความ คุณสอบไม่ผ่าน เจอกันใหม่
-							รอบหน้า แต่ถ้าพบ ให้ตรวจสอบลำดับที่สอบได้โดยใช้ฟังก์ชัน index()
-							และแสดงผลลำดับที่สอบได้ตามคำสั่งในบรรทัดที่ 14 จากนั้นโปรแกรม
-							จะวนลูป while เพื่อรับข้อมูลตัวเลขของเมนู และจะออกจากลูป while
-							เมื่อป้อนตัวเลขเมนูที่ไม่ใช่ 1 และ 2</p>
-						<p>Example</p>
-						<p>อธิบาย</p>
-						<p><strong>บรรทัดที่ 1</strong> กำหนดค่าข้อมูลชื่อผู้ใช้และรหัสผ่านให้กับตัวแปร userList ซึ่งเป็นตัวแปร
-							Tuple ที่ไม่สามารถเพิ่มข้อมูลได้ เพื่อใช้ในการตรวจสอบ<br>
-						<strong>บรรทัดที่ 2-3</strong> กำหนดตัวแปร uList และ pList ให้เป็นข้อมูลชนิด List<br>
-						<strong>บรรทัดที่ 4-7</strong> วนลูป for เพื่อนำข้อมูลในตัวแปร userL ist มาแยกเป็น 2 ส่วน ด้วยฟังก์ชัน
-							split และเก็บค่าไว้ในตัวแปร uList และ pList ด้วยฟังก์ชัน append ()<br>
-						<strong>บรรทัดที่ 8</strong> วนลูป while ในขณะที่เป็นจริงคือ การวนลูปปกติ และจะออกจากลูปได้
-							ด้วยคำสั่ง break ในบรรทัดที่ 14<br>
-						<strong>บรรทัดที่ 9-11</strong> ในลูป while ให้รับข้อมูลชื่อผู้ใช้และรหัสผ่าน เก็บไว้ในตัวแปร username
-							และ password แล้วนำมาเชื่อมต่อกันด้วยเครื่องหมาย + และคั่นด้วย
-							เครื่องหมาย ; เพื่อให้ข้อมูลมีรูปแบบเดียวกับข้อมูลในตัวแปร userList
-							แล้วเก็บค่าไว้ในตัวแปร data<br>
-						<strong>บรรทัดที่ 12-14</strong> ถ้าพบข้อมูล data ใน userList ให้แสดงข้อความ เข้าสู่ระบบสำเร็จ และ
-							จะออกจากลูป while<br>
-						<strong>บรรทัดที่ 15-21</strong> ถ้าไม่พบ ให้ตรวจสอบว่า username เป็นสมาชิกของ uList หรือไม่
-							ถ้าพบ username ใน uList แสดงว่าข้อมูลชื่อผู้ใช้ถูกต้อง ให้แสดง<br>
-							ㆍ ถ้าไม่พบ ให้ตรวจสอบว่า password เป็นสมาชิกของ pList หรือไม่
-							ข้อความ รหัสผ่านไม่ถูกต้อง ลองใหม่อีกครั้ง ถ้าเป็นแสดงว่าข้อมูลรหัสผ่านถูกต้อง ให้แสดงข้อความ ชื่อผู้ใช้ไม่ถูกต้อง ลองใหม่อีกครั้ง<br>
-							ㆍ ถ้าไม่พบ password ใน plist แสดงว่าทั้งข้อมูลชื่อผู้ใช้และรหัสผ่านไม่ถูกต้อง ให้แสดงข้อความ ข้อมูลไม่ถูกต้อง ลองใหม่อีกครั้ง<br>
-							จากนั้นโปรแกรมจะวนลูป while เพื่อรับชื่อผู้ใช้และรหัสผ่าน และจะออกจากลูป while เมื่อข้อมูลชื่อผู้ใช้และรหัสผ่านถูกต้อง</p>
+						
+						<p>
+							<div class="text1">
+								<strong>EXAMPLE</strong>
+								<br>key = 1
+								<br>passList = ["236428", "339212", "326224", "818339", "111212"]
+								<br>while (key > 0) and (key < 3):
+							<br><span class="tab">print("Main menu")
+								<br>print("1.View information about people who passed the exam.")
+								<br>print("2.Search results")
+								<br>key = int(input("Menu: "))
+								<br>if key == 1:
+								<br><span class="tab">print(passList)</span>
+								<br>if key == 2:
+								<br><span class="tab">studentID = input("Enter the applicant number: ")</span>
+								<br>if studentID in passList:
+								<br><span class="tab">idx = passList.index(studentID)</span>
+								<br><span class="tab">print("You passed the exam in order of", idx + 1)</span>
+								<br>else:
+								<br><span class="tab">print("you failed the exam see you next round")</span>
+								</span>
+							
+							</div>
+						</p>	
+							<p> 
+								<div class="text2">
+									<strong>OUTPUT</strong>
+									<br>Main menu
+									<br>1.View information about people who passed the exam.
+									<br>2.Search results
+									<br>Menu: 1
+									<br>['236428', '339212', '326224', '818339', '111212']
+									<br>
+									<br>Main menu
+									<br>1.View information about people who passed the exam.
+									<br>2.Search results
+									<br>Menu: 2
+									<br>Enter the applicant number: 818338
+									<br>you failed the exam see you next round
+									<br>
+									<br>Main menu
+									<br>1.View information about people who passed the exam.
+									<br>2.Search results
+									<br>Menu: 2
+									<br>Enter the applicant number: 818339
+									<br>You passed the exam in order of 4
+								
+								</div>
+							</p>
+						
+						
+						
+						
+						<p>
+							<div class="text1">
+								<strong>EXAMPLE</strong>
+								<br>userList = ("admin;2468", "admin;7531")
+								<br>uList = []
+								<br>pList = []
+								<br>for i in range(0, len(userList)):
+								while True:
+								<br><span class="tab"> username = input("Enter your username: ")
+									<br>password = input("Enter your password: ")
+									<br>data = username + ";" + password
+									if data in userList:</span>
+								
+								<br><span class="tab"> print("login successfully")
+								<br>break</span>
+								<br>else:
+								<br><span class="tab"> if username in uList:</span>
+								<br><span class="tab"><span class="tab"> print("Incorrect password. Please try again. ")</span></span>
+								<br><span class="tab">elif password in pList:</span>
+								<br><span class="tab"><span class="tab"> print("Username is incorrect. Please try again. ")</span></span>
+								<br>else:
+								<br><span class="tab"> else:</span>
+								<br><span class="tab"><span class="tab"> print("Your details are incorrect. Please try again. ") </span></span>
+								</span>
+							
+							</div>
+						</p>
+						<p> 
+							<div class="text2">
+								<strong>OUTPUT</strong>
+								<br>Enter your username: root
+								<br>Enter your password: 2468
+								<br>Username is incorrect. Please try again.
+								<br>Enter your username: admin
+								<br>Enter your password: 1234
+								<br>Incorrect password. Please try again. 
+								<br>Enter your username: admin
+								<br>Enter your password: 7531
+								<br>login successfully  
+							</div>
+						</p>
+						
 					</div>
 				</section>
 				<section>
@@ -1876,17 +2147,35 @@
 								</tr>
 							</table>
 						</body>
-						<p>Example</p>
-						<p>อธิบาย<br>
-						<strong>บรรทัดที่ 1-2</strong>  กำหนดข้อมูลเลขที่และรหัสคณะของคนที่สอบผ่าน เก็บค่าในตัวแปร
-							Dictionary ชื่อ passList<br>
-						<strong>บรรทัดที่ 3-4</strong> กำหนดข้อมูลรหัสและชื่อคณะ เก็บค่าไว้ในตัวแปร Dictionary ชื่อ faclist<br>
-						<strong>บรรทัดที่ 5</strong> รับข้อมูลเลขที่ผู้สมัคร เก็บค่าในตัวแปร studentID<br>
-						<strong>บรรทัดที่ 6-10</strong> ตรวจสอบ studentID ในตัวแปร passList<br>
-							ถ้าพบ studentID ในตัวแปร passList ให้นำ studentID เป็น key เพื่ออ้างอิง
-							ไปยังข้อมูล value และเก็บค่าในตัวแปร facCode จากนั้นนำ facCode ไป
-							อ้างอิงถึงข้อมูลคณะที่สอบได้ และแสดงผล<br>
-							ถ้าไม่พบ ให้แสดงข้อความว่า คุณสอบไม่ผ่าน เจอกันใหม่รอบหน้า</p>
+						
+						<p>
+							<div class="text1">
+								<strong>EXAMPLE</strong>
+								<br>passList = {"236428": "scl", "339212": "nurse", "326224": "sc", "818339" :"engineer",
+								"111212":"nurse"}
+								<br>facList = {"sci": "scientifically", "nurse": " nursing program", "engineer": "engineering"}
+								<br>studentID = input("Enter the applicant number: ")
+								if studentID in passList:
+								
+								<br><span class="tab"> facCode = passList.get(studentID)
+								<br>print("you passed the exam", facList[facCode])</span>
+								<br>else:
+								<br><span class="tab"> print("you failed the exam see you next round")</span>
+								</span>
+							
+							</div>
+						</p>
+						<p> 
+							<div class="text2">
+								<strong>OUTPUT</strong>
+								<br>Enter the applicant number: 326224
+								<br>you passed the exam scientifically
+								<br>
+								<br>Enter the applicant number: 339121
+								<br>you failed the exam see you next round
+							</div>
+						</p>
+						
 						<p><strong>SET</strong></p>
 						<p>set เป็นชนิดข้อมูลที่ประกอบด้วยรายการข้อมูลชนิดเดียวกันเรียงต่อๆ กัน ภายใต้เครื่องหมาย
 							วงเล็บปีกกา {...} และคั่นด้วยเครื่องหมายคอมม่า (,) สามารถเป็นค่าว่างได้ และจะไม่เก็บข้อมูลที่ซ้ำ
@@ -1960,29 +2249,43 @@
 								</tr>
 							</table>
 						</body>
-						<p>Example</p>
-						<p>อธิบาย<br>
-						<strong>บรรทัดที่ 1</strong>กำหนดข้อมูลเลขที่ของผู้เรียน 10 คน ให้กับตัวแปร Set ชื่อ total1<br>
-							<strong>บรรทัดที่ 2</strong> กำหนดข้อมูลเลขที่ผู้เรียนที่เรียนวิชาคณิตศาสตร์ ให้กับตัวแปร Set ชื่อ mathl<br>
-						<strong>บรรทัดที่ 3</strong> กำหนดข้อมูลเลขที่ผู้เรียนที่เรียนวิชาภาษาอังกฤษให้กับตัวแปร Set ชื่อ eng1<br>
-						<strong>บรรทัดที่ 4</strong> แสดงผลข้อมูลเลขที่ผู้เรียน math1 และจำนวนคน len(math1) ของคน
-							ที่เรียนวิชาคณิตศาสตร์<br>
-						<strong>บรรทัดที่ 5</strong> แสดงผลข้อมูลเลขที่ผู้เรียน eng1 และจำนวนคน Ien(eng1) ของคนที่
-							เรียนวิชาภาษาอังกฤษ<br>
-						<strong>บรรทัดที่ 6-7</strong> แสดงผลข้อมูลเลขที่ผู้เรียน math 1.intersection (eng1) และจำนวนคน
-							len(math 1.intersection(eng1)) ของคนที่เรียนทั้งสองวิชา<br>
-						<strong>บรรทัดที่ 8-9</strong> แสดงผลข้อมูลเลขที่ผู้เรียน math 1.difference(eng1) และจำนวนคน
-							len(math 1.difference(eng1)) ของคนที่เรียนคณิตศาสตร์แต่ไม่เรียน
-							ภาษาอังกฤษ<br>
-						<strong>บรรทัดที่ 10 - 11</strong> แสดงผลข้อมูลเลขที่ผู้เรียน eng 1.difference (math1) และจำนวนคน
-							len(eng 1.difference(math 1)) ของคนที่เรียนภาษาอังกฤษแต่ไม่เรียน
-							คณิตศาสตร์<br>
-						<strong>บรรทัดที่ 12</strong> ใช้ฟังก์ชัน union()ดำเนินการหาคนที่เรียนภาษาอังกฤษและคณิตศาสตร์
-							ทั้งหมด เก็บค่าในตัวแปร both<br>
-						<strong>บรรทัดที่ 13</strong> แสดงผลข้อมูลจำนวนคน len(both) และเลขที่ผู้เรียน both ของคนที่เรียน
-							ภาษาอังกฤษและคณิตศาสตร์ทั้งหมด<br>
-						<strong>บรรทัดที่ 14-15</strong> แสดงผลข้อมูลเลขที่ผู้เรียน total1.difference(both) และจำนวนคน
-							len(total 1.difference(both)) ของคนที่ไม่เรียนทั้งสองวิชา</p>
+						<p>
+							<div class="text1">
+								<strong>EXAMPLE</strong>
+								<br>total1 ={1,2.3,4,5,6, 7.8,9, 10}
+								<br>math1 = {1, 3, 5, 6, 7,9}
+								<br>eng1 = {1,3,5,8, 10}
+								<br>print("those learning Math: ", math1, "=", len(math1))
+								<br>print(" those learning English: ", eng1, "=", len(eng1))
+								<br>print("those learning Math and English: ", math1.intersection(eng1), "=",len(math1.intersection(eng1)))
+								<br>print("People who study math but don't study English are: ", math1.difference(eng1),"=", len(math1.difference(eng1)))
+								<br>print("People who study English but don't study math are: ", eng1.difference(math1),"=", len(eng1.difference(math1)))
+								<br>both = math1.union(eng1)
+								<br>print("The total number of people studying English and Math are: ", len(both), "คน ได้แก่", both)
+								print("People who do not study both subject are: ", total1.difference(both), "=", len(total1.difference(both)))
+							
+							</div>
+						</p>
+						<p> 
+							<div class="text2">
+								<strong>OUTPUT</strong>
+								<br>those learning Math:  {1, 3, 5, 6, 7, 9} = 6
+								<br>those learning English:  {1, 3, 5, 8, 10} = 5
+								<br>those learning Math and English:  {1, 3, 5} = 3
+								<br>People who study math but don't study English are:  {9, 6, 7} = 3
+								<br>People who study English but don't study math are:  {8, 10} = 2
+								<br>The total number of people studying English and Math are:  8 = {1, 3, 5, 6, 7, 8, 9, 10}
+								<br>People who do not study both subject are:  {2, 4} = 2
+							</div>
+						</p>
+						
+					</div>
+				</section>
+				<section>
+					<header>
+						<h2>LESSON 9</h2>
+					</header>
+					<div class="content">
 					</div>
 				</section>		
 						<!-- <header>
